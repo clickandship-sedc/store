@@ -11,7 +11,7 @@ footer.onmouseleave = () => {
         transform: `rotateY(${0}deg) rotateX(${0}deg)`
     }, { duration: 1500, fill: "forwards", easing: "ease-in-out" })
 }
-
+//
 // 3D Photo
 
 function rotateElement(x, y, element) {
