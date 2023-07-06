@@ -3,9 +3,6 @@ const currentProdCard = document.querySelector(".currentProductCard")
 const productBtn = document.querySelector("#productButton")
 const closeProductBtn = document.querySelector(".closeProductButton")
 
-let rgOn = false
-let LDP = false
-
 let productTimeouts = { closeTimeout: null, showTimeout: null };
 
 const productStates = {
