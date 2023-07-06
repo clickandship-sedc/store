@@ -70,7 +70,7 @@ const options = {
 }
 
 // Create the intersection observer
-const observer = new IntersectionObserver((entries) => {
+const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         const isIntersecting = entry.isIntersecting;
 
@@ -86,7 +86,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Start observing the observed elements
 observedElements.forEach((element) => {
-    observer.observe(element)
+    observer3.observe(element)
 })
 
 

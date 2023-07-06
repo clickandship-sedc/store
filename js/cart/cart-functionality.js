@@ -255,7 +255,7 @@ async function fillCart(ul) {
 
 function fillSummary(ul) {
     ul.innerHTML = ''
-    const cartItems = JSON.parse(localStorage.getItem("cart"))
+    const cartItems = JSON.parse(localStorage.getItem("cart") || "[]")
     let pricesArray = calculateSummary(cartItems)
     for (let i = 0; i < pricesArray.length; i++) {
         if (pricesArray[i] === "0.00") {

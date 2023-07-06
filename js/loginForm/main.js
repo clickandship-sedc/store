@@ -1,4 +1,3 @@
-const loginDp = document.querySelector(".loginDropdown")
 const loginBtn = document.querySelector("#loginButton")
 const cancelBtn = document.querySelector(".cancel")
 const registerUi = document.querySelector(".registerUi")
