@@ -20,7 +20,7 @@ let currentTheme = ""
 
 themeCheck()
 
-export function themeCheck() {
+function themeCheck() {
     const themeMode = localStorage.getItem("theme-mode")
     const systemDarkMode =
         window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
