@@ -2,7 +2,7 @@ const searchBarScroll = document.querySelector('.search-form')
 const header = document.querySelector('header')
 
 // Create a new IntersectionObserver
-const observer = new IntersectionObserver(entries => {
+const observer2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         // Check if the target element is visible (i.e., observed)
         if (!entry.isIntersecting) {
@@ -15,6 +15,6 @@ const observer = new IntersectionObserver(entries => {
 })
 
 // Start observing the searchBarScroll element
-observer.observe(searchBarScroll)
+observer2.observe(searchBarScroll)
 
 

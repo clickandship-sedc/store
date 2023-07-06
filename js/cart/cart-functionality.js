@@ -121,7 +121,7 @@ function openCart() {
 }
 
 function emptyCart() {
-    const cartItems = JSON.parse(localStorage.getItem("cart"))
+    const cartItems = JSON.parse(localStorage.getItem("cart") || "[]")
     if (cartItems.length === 0) {
         cartContainer.classList.add("cartEmpty")
         return
@@ -133,7 +133,7 @@ function emptyCart() {
 }
 
 async function fillCart(ul) {
-    const cartItems = JSON.parse(localStorage.getItem("cart") || [])
+    const cartItems = JSON.parse(localStorage.getItem("cart") || "[]")
 
     const subCategoriesArray = await fetchJSON('./mock/sub-categories.json')
     const flattenedSubCategories = flattenObjectArrays(subCategoriesArray)
