@@ -24,9 +24,10 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   scrollbar-width: none;
 
-  
+
 
   .closeProductButton {
     position: absolute;
@@ -351,4 +352,36 @@
 
 .currentProductCard[open] {
   transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+  .currentProductCard{
+    ul {
+      li {
+        &.productButtonsContainer {
+          .amountProduct {
+            width: 1.5rem;
+            padding-block: 0;
+          }
+
+          button {
+            &.buyNowButton {
+              width: 50%;
+            }
+
+            &.amountProductBtn {
+              border-radius: 50%;
+              height: 2rem;
+              width: 2rem;
+            }
+
+            &.addToCartButton {
+              width: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }

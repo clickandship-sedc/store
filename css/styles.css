@@ -2768,6 +2768,7 @@ main.currentMain {
     margin-top: -1rem;
     padding: 0.5rem;
     border: 0.15rem solid var(--paleAccentThree);
+    background-color: var(--tpPri);
     border-radius: 0.5rem;
     z-index: 3;
     gap: 0.5rem;
@@ -2805,6 +2806,7 @@ main.currentMain {
     margin: 0;
     margin-top: -1rem;
     backdrop-filter: blur(1rem);
+    background-color: var(--tpPri);
     width: min-content;
     right: 2rem;
     z-index: 3;
@@ -5043,4 +5045,22 @@ main.currentMain {
 
 .currentProductCard[open] {
   transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+  .currentProductCard ul li.productButtonsContainer .amountProduct {
+    width: 1.5rem;
+    padding-block: 0;
+  }
+  .currentProductCard ul li.productButtonsContainer button.buyNowButton {
+    width: 50%;
+  }
+  .currentProductCard ul li.productButtonsContainer button.amountProductBtn {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+  }
+  .currentProductCard ul li.productButtonsContainer button.addToCartButton {
+    width: 15%;
+  }
 }/*# sourceMappingURL=styles.css.map */
