@@ -3,7 +3,7 @@ const currentProdCard = document.querySelector(".currentProductCard")
 const productBtn = document.querySelector("#productButton")
 const closeProductBtn = document.querySelector(".closeProductButton")
 
-let productTimeouts = { closeTimeout: null, showTimeout: null };
+let productTimeouts = { closeTimeout: null, showTimeout: null }
 
 const productStates = {
     openTime: 100,
@@ -90,7 +90,7 @@ async function fillProduct(container, product) {
         <h3>${product.shipping.price}</h3>`
     } else {
         liFour.innerHTML = `<p>Shipping</p>
-        <h3>$${getRandomNumber()}</h3>`
+        <h3>$10</h3>`
     }
 
     ul.appendChild(liFour)
@@ -282,7 +282,7 @@ function updateDisplayTwo(product, li, amountNumber) {
     }
 
     document.querySelector(`#baseCost-${product.id}`).querySelector("h3").textContent = `$${(product.price * amountNumber.textContent).toFixed(2)}`
-    document.querySelector(`#totalCost-${product.id}`).querySelector("h2").textContent = `$${((product.price - product.price * (product.sale / 100) + Number(li.querySelector('h3').textContent.slice(1))) * amountNumber.textContent).toFixed(2)}`
+    document.querySelector(`#totalCost-${product.id}`).querySelector("h2").textContent = `$${(((product.price - product.price * (product.sale / 100)) * amountNumber.textContent)+ Number(li.querySelector('h3').textContent.slice(1))).toFixed(2)}`
     document.querySelector(`#productDiscount-${product.id}`).querySelector("h3").textContent = `-$${(((product.price * product.sale) / 100) * amountNumber.textContent).toFixed(2)}`
 }
 

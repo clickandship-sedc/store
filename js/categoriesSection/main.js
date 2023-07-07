@@ -5,7 +5,7 @@ const singleProductDiv = document.getElementById("singleProduct");
 
 const filterBtn = document.getElementById("filterBtn");
 const filters = document.getElementById("filters");
-
+const resetFiltersBtn = document.querySelector("#resetFilters")
 const sortBtn = document.getElementById("sortBtn");
 const sortingSection = document.getElementById("sortingSection")
 const highestRatingBtn = document.getElementById("highest-rating");
@@ -312,10 +312,12 @@ filterBtn.addEventListener("click", () => {
     const prices = displayedProducts.map(o => o.price)
     let maxValue = Math.max(...prices)
     slider.setAttribute("max", maxValue.toString())
+    slider.value = maxValue
+    output.innerHTML = maxValue
 })
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
 let size = document.getElementById("size")
 let applyFiltersBtn = document.getElementById("applyFilters")
 let origin = document.getElementById("region")
@@ -455,18 +457,60 @@ sortBtn.addEventListener("click", () => {
     }
 })
 
-function sortByLowestPrice() {
+// function sortByLowestPrice() {
 
+//     let lowestPriceSort = [];
+//     if (filteredProducts.length != 0) {
+//         filteredProducts.sort((a, b) => {
+//             return a.price - b.price;
+//         })
+//         lowestPriceSort = filteredProducts;
+//     } else {
+//         displayedProducts.sort((a, b) => {
+//             return a.price - b.price;
+//         })
+//         lowestPriceSort = displayedProducts;
+//     }
+
+//     printProducts(lowestPriceSort, productsDiv);
+// }
+
+function sortByLowestPrice() {
     let lowestPriceSort = [];
-    if (filteredProducts.length != 0) {
+
+    if (filteredProducts.length !== 0) {
         filteredProducts.sort((a, b) => {
-            return a.price - b.price;
-        })
+            if (a.sale && !b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                return discountedPriceA - b.price;
+            } else if (!a.sale && b.sale) {
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return a.price - discountedPriceB;
+            } else if (a.sale && b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceA - discountedPriceB;
+            } else {
+                return a.price - b.price;
+            }
+        });
         lowestPriceSort = filteredProducts;
     } else {
         displayedProducts.sort((a, b) => {
-            return a.price - b.price;
-        })
+            if (a.sale && !b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                return discountedPriceA - b.price;
+            } else if (!a.sale && b.sale) {
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return a.price - discountedPriceB;
+            } else if (a.sale && b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceA - discountedPriceB;
+            } else {
+                return a.price - b.price;
+            }
+        });
         lowestPriceSort = displayedProducts;
     }
 
@@ -475,23 +519,66 @@ function sortByLowestPrice() {
 
 
 
-function sortByHighestPrice() { // Should check fitlered first
+// function sortByHighestPrice() { // Should check fitlered first
 
+//     let highestPriceSort = [];
+//     if (filteredProducts.length != 0) {
+//         filteredProducts.sort((a, b) => {
+//             return b.price - a.price;
+//         })
+//         highestPriceSort = filteredProducts;
+//     } else {
+//         displayedProducts.sort((a, b) => {
+//             return b.price - a.price;
+//         })
+//         highestPriceSort = displayedProducts;
+//     }
+
+//     printProducts(highestPriceSort, productsDiv);
+// }
+
+function sortByHighestPrice() {
     let highestPriceSort = [];
-    if (filteredProducts.length != 0) {
+
+    if (filteredProducts.length !== 0) {
         filteredProducts.sort((a, b) => {
-            return b.price - a.price;
-        })
+            if (a.sale && !b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                return b.price - discountedPriceA;
+            } else if (!a.sale && b.sale) {
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceB - a.price;
+            } else if (a.sale && b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceB - discountedPriceA;
+            } else {
+                return b.price - a.price;
+            }
+        });
         highestPriceSort = filteredProducts;
     } else {
         displayedProducts.sort((a, b) => {
-            return b.price - a.price;
-        })
+            if (a.sale && !b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                return b.price - discountedPriceA;
+            } else if (!a.sale && b.sale) {
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceB - a.price;
+            } else if (a.sale && b.sale) {
+                const discountedPriceA = a.price - (a.price * (a.sale / 100));
+                const discountedPriceB = b.price - (b.price * (b.sale / 100));
+                return discountedPriceB - discountedPriceA;
+            } else {
+                return b.price - a.price;
+            }
+        });
         highestPriceSort = displayedProducts;
     }
 
     printProducts(highestPriceSort, productsDiv);
 }
+
 
 function sortByHighestRating() {
 
@@ -511,7 +598,7 @@ function sortByHighestRating() {
     printProducts(highestRatingSort, productsDiv);
 }
 
-function changeSortState(sort){
+function changeSortState(sort) {
     for (let i = 0; i < sortOptions.length; i++) {
         if (sort !== sortOptions[i]) {
             if (sortOptions[i].classList.contains("currentOption")) {
@@ -524,7 +611,7 @@ function changeSortState(sort){
 }
 
 lowestPriceBtn.addEventListener("click", () => {
-    sortByLowestPrice();changeSortState(lowestPriceBtn)
+    sortByLowestPrice(); changeSortState(lowestPriceBtn)
 })
 
 highestPriceBtn.addEventListener("click", () => {
@@ -535,4 +622,17 @@ highestPriceBtn.addEventListener("click", () => {
 highestRatingBtn.addEventListener("click", () => {
     sortByHighestRating();
     changeSortState(highestRatingBtn)
+})
+
+resetFiltersBtn.addEventListener("click", () => {
+    filteredProducts = []
+    filterHelper = {
+        price: null,
+        size: null,
+        region: null
+    }
+    origin.value = "all"
+    size.value = "all"
+    slider.value = Number(slider.max)
+    output.innerHTML = Number(slider.max)
 })

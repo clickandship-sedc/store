@@ -132,7 +132,8 @@ header {
 header .scrollDiv {
   position: fixed;
   top: 0;
-  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
   height: 0;
   width: 100%;
   z-index: -155;
@@ -172,11 +173,13 @@ header.scrollHeader nav {
   border: none;
   background: none;
   overflow: unset;
-  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
 }
 header.scrollHeader nav .themeSelector {
   top: 0.6rem;
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   background-color: var(--tpPri);
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -268,7 +271,8 @@ header.scrollHeader nav .navigationLists li ::before {
 .logo svg.mobileLogo {
   display: none;
   border-radius: 50%;
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 .logo svg.mobileLogo #headerLogoGradientMobile :first-child {
   stop-color: var(--logoReverseAccentOne);
@@ -475,7 +479,8 @@ header.scrollHeader nav .navigationLists li ::before {
   border-bottom-right-radius: 2rem;
   border: 0.2rem solid var(--paleAccentThree);
   background-color: var(--tpPri);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -492,6 +497,10 @@ header.scrollHeader nav .navigationLists li ::before {
   width: 100%;
   height: 100%;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.search-bar-container .search-bar::-moz-selection {
+  background: var(--accent);
+  color: var(--priColor);
 }
 .search-bar-container .search-bar::selection {
   background: var(--accent);
@@ -576,7 +585,8 @@ header.scrollHeader nav .navigationLists li ::before {
   position: absolute;
   width: 100%;
   background-color: var(--tpPri);
-  backdrop-filter: blur(3rem);
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
   border-top-left-radius: 1.6rem;
   border-top-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
@@ -637,6 +647,7 @@ header.scrollHeader nav .navigationLists li ::before {
 }
 .search-suggestions ul li div h5,
 .search-suggestions ul li div h6 {
+  width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
   overflow: hidden;
@@ -715,7 +726,8 @@ header.scrollHeader nav .navigationLists li ::before {
   border-bottom-right-radius: 1.7rem;
   background-color: var(--tpPri);
   border: 0.2rem solid var(--paleAccentThree);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   padding: 1rem;
   transform: translateY(100vh);
   transform-origin: 150% 15%;
@@ -733,7 +745,9 @@ header.scrollHeader nav .navigationLists li ::before {
   justify-content: center;
   gap: 1rem;
   margin: 0.5rem 0 0.5rem 0.5rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .ctDropDown .categories-ul li {
   height: 3rem;
@@ -988,11 +1002,14 @@ header.scrollHeader nav .navigationLists li ::before {
   border: 0.2rem solid var(--paleAccentThree);
   padding: 0.3rem;
   background-color: var(--priColor);
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   border-radius: 0.5rem;
   text-align: center;
   pointer-events: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 3;
 }
@@ -1038,9 +1055,12 @@ nav {
   position: fixed;
   right: 1.5vmax;
   top: 1vmax;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   background-color: var(--tpPri);
-  backdrop-filter: blur(1vmax);
+  -webkit-backdrop-filter: blur(1vmax);
+          backdrop-filter: blur(1vmax);
   border: 0.2rem solid var(--paleAccentThree);
   border-radius: 1rem;
   overflow: hidden;
@@ -1295,6 +1315,7 @@ footer .dividerFooter {
     bottom: 4vmax;
   }
   footer .footerMain .newsletter {
+    width: -moz-min-content;
     width: min-content;
   }
   footer .footerMain .newsletter p {
@@ -1587,6 +1608,7 @@ footer .dividerFooter {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  width: -moz-min-content;
   width: min-content;
 }
 .newsletter p {
@@ -1597,7 +1619,9 @@ footer .dividerFooter {
   letter-spacing: 0.2rem;
   color: var(--priColor);
   text-indent: 0.5rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   text-shadow: 0.1rem 0.1rem 0 var(--secColor);
 }
 .newsletter h1 {
@@ -1607,7 +1631,9 @@ footer .dividerFooter {
   font-family: antique-olive, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   text-transform: lowercase;
   margin-bottom: 2rem;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   text-shadow: 0.1rem 0.1rem 0 var(--tpPri);
 }
 .newsletter form {
@@ -1660,12 +1686,25 @@ footer .dividerFooter {
   border-top-left-radius: 1.5rem;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
+.newsletter input::-moz-selection {
+  background: var(--accent);
+  color: var(--priColor);
+}
 .newsletter input::selection {
   background: var(--accent);
   color: var(--priColor);
 }
+.newsletter input:invalid:not(:-moz-placeholder-shown) {
+  border-color: red;
+}
 .newsletter input:invalid:not(:placeholder-shown) {
   border-color: red;
+}
+.newsletter input:invalid:not(:-moz-placeholder-shown) ~ label {
+  opacity: 1;
+  color: var(--priColor);
+  background: rgb(255, 50, 50);
+  transform: translateY(-105%);
 }
 .newsletter input:invalid:not(:placeholder-shown) ~ label {
   opacity: 1;
@@ -1719,7 +1758,9 @@ footer .dividerFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   width: 90%;
   height: 90%;
   border-radius: 50%;
@@ -1773,7 +1814,9 @@ footer .dividerFooter {
   font-size: 1.1vmax;
   letter-spacing: 0.2vmax;
   color: var(--priColor);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   text-shadow: 0.1rem 0.1rem 0 var(--secColor);
   text-indent: 0.5vmax;
 }
@@ -1796,6 +1839,7 @@ footer .dividerFooter {
   position: relative;
   left: 0;
   top: 0;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 3.5vmax;
   line-height: 1.2;
@@ -2130,7 +2174,8 @@ main.currentMain {
   gap: 0.5vmax;
   padding: 0.5vmax;
   border-radius: 1vmax;
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   border: 0.2rem solid var(--paleAccentThree);
 }
 .scrollableCategories .categoriesScrollUl .scrollCatLi, .scrollableCategories .categoriesScrollUl .scrollCatLiTwo,
@@ -2407,7 +2452,8 @@ main.currentMain {
   inset: -0.2rem;
   position: absolute;
   background: linear-gradient(var(--spanDeg), var(--paleAccentThree) 30%, var(--paleAccent) 70%, var(--paleAccentThree) 0%);
-  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
   z-index: -1;
 }
 .scrollableCategories .scrollCatButtons:hover,
@@ -2517,7 +2563,8 @@ main.currentMain {
   padding: 0.7rem;
   width: 85%;
   border: 0.25rem solid var(--paleAccentThree);
-  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
@@ -2532,7 +2579,8 @@ main.currentMain {
   margin-inline: auto;
   border: 0.25rem solid var(--paleAccentThree);
   border-radius: 1rem;
-  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
   background: var(--tpPri);
   padding: 2rem;
   display: flex;
@@ -2593,7 +2641,8 @@ main.currentMain {
   border-top: 0;
   border-bottom: 0;
   border: 0;
-  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
   width: 80%;
 }
 .productsMain .categoriesPageContainer .scrollableSubCats .subCatsScrollUL .scrollCatLiTwo::before {
@@ -2627,6 +2676,7 @@ main.currentMain {
   flex-direction: column;
   gap: 1.5rem;
   margin-right: 2%;
+  height: -moz-fit-content;
   height: fit-content;
   border: 0.2rem solid var(--paleAccentThree);
   border-radius: 0.5rem;
@@ -2697,9 +2747,11 @@ main.currentMain {
   flex-direction: column;
   margin-left: 1.5rem;
   margin-right: -0.5rem;
+  min-width: -moz-max-content;
   min-width: max-content;
   border: 0.2rem solid var(--paleAccentThree);
   border-radius: 0.4rem;
+  height: -moz-fit-content;
   height: fit-content;
   overflow: hidden;
 }
@@ -2775,7 +2827,8 @@ main.currentMain {
   }
   .productsMain .categoriesPageContainer .mainContentContainer .filters {
     position: absolute;
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
     margin: 0;
     margin-top: -1rem;
     padding: 0.5rem;
@@ -2783,6 +2836,7 @@ main.currentMain {
     border-radius: 0.5rem;
     z-index: 3;
     gap: 0.5rem;
+    width: -moz-min-content;
     width: min-content;
   }
   .productsMain .categoriesPageContainer .mainContentContainer .filters .selectDiv {
@@ -2816,7 +2870,9 @@ main.currentMain {
     position: absolute;
     margin: 0;
     margin-top: -1rem;
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+    width: -moz-min-content;
     width: min-content;
     right: 2rem;
     z-index: 3;
@@ -2865,7 +2921,8 @@ main.currentMain {
   display: none;
   justify-content: center;
   border: 0.3rem solid var(--paleAccentThree);
-  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
   border-radius: 1rem;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 0.5rem;
@@ -2880,7 +2937,8 @@ main.currentMain {
   background: none;
 }
 .loginDropdown::backdrop {
-  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
   background-color: var(--backdropBackground);
 }
 .loginDropdown .closeLoginButton {
@@ -2988,7 +3046,9 @@ main.currentMain {
 }
 .loginDropdown form span {
   font-weight: 650;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   pointer-events: none;
 }
 .loginDropdown form a {
@@ -3016,12 +3076,25 @@ main.currentMain {
   width: auto;
   height: auto;
 }
+.loginDropdown input::-moz-selection {
+  background: var(--accent);
+  color: var(--priColor);
+}
 .loginDropdown input::selection {
   background: var(--accent);
   color: var(--priColor);
 }
+.loginDropdown input:invalid:not(:-moz-placeholder-shown) {
+  border-color: red;
+}
 .loginDropdown input:invalid:not(:placeholder-shown) {
   border-color: red;
+}
+.loginDropdown input:invalid:not(:-moz-placeholder-shown) ~ label {
+  opacity: 1;
+  color: var(--priColor);
+  background: rgb(255, 50, 50);
+  transform: translateY(-110%);
 }
 .loginDropdown input:invalid:not(:placeholder-shown) ~ label {
   opacity: 1;
@@ -3113,7 +3186,8 @@ main.currentMain {
   position: relative;
   width: 50%;
   background-color: var(--tpPri);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -3165,7 +3239,8 @@ main.currentMain {
   margin-top: -10rem;
 }
 .loginUi section:nth-child(2) {
-  margin-block-start: 1rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   gap: 0.5rem;
 }
 .loginUi section:nth-child(2) div {
@@ -3188,7 +3263,8 @@ main.currentMain {
   width: 50%;
   background-color: var(--paleAccentTwo);
   color: var(--priColor);
-  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
   gap: 2rem;
   transition: 500ms all ease-in-out;
   overflow: hidden;
@@ -3227,7 +3303,9 @@ main.currentMain {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .registerUi .fields .checkBoxes span {
   pointer-events: all !important;
@@ -3241,7 +3319,9 @@ main.currentMain {
   width: 2rem;
   height: 2rem;
   border-radius: 1rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   transition: 300ms all ease;
   display: flex;
   justify-content: center;
@@ -3256,8 +3336,6 @@ main.currentMain {
   height: 1rem;
   border: solid var(--priColor);
   border-width: 0 0.2rem 0.2rem 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   visibility: hidden;
 }
@@ -3290,7 +3368,8 @@ main.currentMain {
   width: 100%;
   background-color: var(--tpPri);
   color: var(--secColor);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
 }
 .regOn .fields {
   display: block;
@@ -3335,7 +3414,8 @@ main.currentMain {
   position: relative;
   width: 0%;
   background-color: var(--tpPri);
-  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   overflow: hidden;
   gap: 1.5rem;
   transition: 500ms all ease-in-out;
@@ -3680,6 +3760,9 @@ main.currentMain {
     color: var(--priColor);
     background: linear-gradient(45deg, var(--accent) 0%, var(--accent) 30%, var(--secAccent) 50%, var(--accent) 70%);
   }
+  .cart .checkout .checkoutSection input:invalid:not(:-moz-placeholder-shown) ~ label {
+    transform: translateY(-82%);
+  }
   .cart .checkout .checkoutSection input:invalid:not(:placeholder-shown) ~ label {
     transform: translateY(-82%);
   }
@@ -3706,7 +3789,11 @@ main.currentMain {
 .checkout .checkoutSection {
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(0.5rem);
+  background-color: var(--tpPri);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
 }
 .checkout .checkoutSection.checkoutNav h2 {
   position: relative;
@@ -3728,7 +3815,6 @@ main.currentMain {
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  backdrop-filter: blur(0.5rem);
 }
 .checkout .checkoutSection.checkoutNav div .divider {
   width: 100%;
@@ -3815,11 +3901,23 @@ main.currentMain {
   color: var(--accent);
   border-color: var(--paleAccentTwo);
 }
+.checkout .checkoutSection form input::-moz-selection {
+  background: var(--paleAccentTwo);
+  color: var(--priColor);
+}
 .checkout .checkoutSection form input::selection {
   background: var(--paleAccentTwo);
   color: var(--priColor);
 }
+.checkout .checkoutSection form input:invalid:not(:-moz-placeholder-shown) {
+  border-color: red;
+}
 .checkout .checkoutSection form input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.checkout .checkoutSection form input:invalid:not(:-moz-placeholder-shown) ~ label {
+  color: var(--priColor);
+  background-color: red;
   border-color: red;
 }
 .checkout .checkoutSection form input:invalid:not(:placeholder-shown) ~ label {
@@ -3843,6 +3941,7 @@ main.currentMain {
   order: 1;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   border: 0.15rem solid var(--paleAccentThree);
+  width: -moz-fit-content;
   width: fit-content;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
@@ -3958,7 +4057,8 @@ main.currentMain {
   padding-block: 0.5rem;
   border-left: 0.15rem solid var(--paleAccentThree);
   border-right: 0.15rem solid var(--paleAccentThree);
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
 }
 .products ul li {
   position: relative;
@@ -3985,6 +4085,7 @@ main.currentMain {
   -webkit-line-clamp: 1;
   line-clamp: 1;
   -webkit-box-orient: vertical;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   color: var(--secColor);
@@ -4183,7 +4284,8 @@ main.currentMain {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem;
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   background-color: var(--tpPri);
 }
 .summary ul li:first-child {
@@ -4223,10 +4325,10 @@ main.currentMain {
   margin-inline: auto;
   margin-top: 10%;
   padding: 1.5rem;
-  border: 0.2rem solid var(--paleAccentTwo);
+  border: 0.25rem solid var(--paleAccentThree);
   gap: 1.5rem;
   border-radius: 0.5rem;
-  background-color: var(--tpPri);
+  background-color: var(--priColor);
   overflow: hidden;
   color: var(--secColor);
 }
@@ -4264,8 +4366,11 @@ main.currentMain {
 .purchaseConfirmation div .price {
   padding: 0.4rem;
   border-radius: 0.5rem;
-  color: var(--priColor);
-  background: linear-gradient(45deg, var(--accent) 0%, var(--accent) 30%, var(--secAccent) 70%, var(--accent) 30%, var(--paleAccent));
+  padding-inline: 0.3vmax;
+  padding-block: 0;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--paleAccentThree);
+  background: var(--paleAccent);
 }
 .purchaseConfirmation button {
   position: relative;
@@ -4279,14 +4384,15 @@ main.currentMain {
   touch-action: manipulation;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-.purchaseConfirmation button::before {
-  content: "";
-  inset: -1rem;
-  position: absolute;
-  filter: blur(0.5vmax);
-  background: linear-gradient(-45deg, var(--secAccent) 0%, var(--accent) 30%, var(--paleAccentTwo) 50%, var(--secAccent) 70%);
-  z-index: -1;
+  background: var(--paleAccent);
+  border-radius: 0.7rem;
+  border: 0.25rem solid var(--paleAccentThree);
+  font-size: 1.1rem;
+  color: var(--secColor);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .purchaseConfirmation button:hover {
   background-color: var(--priColor);
@@ -4310,7 +4416,8 @@ main.currentMain {
 }
 .purchaseConfirmation[open]::backdrop {
   background-color: rgba(0, 0, 0, 0.575);
-  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+          backdrop-filter: blur(1.5rem);
 }
 
 .emptyCartDiv {
@@ -4343,7 +4450,8 @@ main.currentMain {
   font-family: antique-olive, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   text-shadow: 0.05rem 0.05rem 0 var(--tpSec);
   background-color: var(--tpPri);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--paleAccentThree);
@@ -4355,7 +4463,8 @@ main.currentMain {
   font-size: 2vmax;
   text-shadow: 0.05rem 0.05rem 0 var(--tpSec);
   background-color: var(--tpPri);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--paleAccentThree);
@@ -4368,7 +4477,8 @@ main.currentMain {
   justify-content: center;
   align-items: center;
   background-color: var(--tpPri);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--paleAccentThree);
@@ -4409,7 +4519,8 @@ main.currentMain {
   margin-top: 5%;
 }
 .productDivs#products ul li {
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 .productDivs .moving-arrow {
   display: inline-block;
@@ -4420,7 +4531,8 @@ main.currentMain {
   text-align: center;
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
   background-color: var(--secColor);
   border: 0.25rem solid var(--paleAccent);
   border-radius: 0.7rem;
@@ -4439,7 +4551,8 @@ main.currentMain {
   background: var(--priColor);
   opacity: 70%;
   z-index: -5;
-  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
 }
 .productDivs h1 span {
   align-items: center;
@@ -4528,7 +4641,8 @@ main.currentMain {
   left: -0.7rem;
   transform: rotate(-15deg);
   background-color: var(--reverseAccent);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   padding: 0.2rem;
   color: var(--priColor);
   border-radius: 4px;
@@ -4784,7 +4898,8 @@ main.currentMain {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1rem;
-  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
   background-color: var(--tpPri);
   border: 0.15rem solid var(--paleAccentThree);
   border-radius: 1rem;
@@ -4831,7 +4946,8 @@ main.currentMain {
   fill: var(--paleAccentThree);
 }
 .currentProductCard .imageContainer {
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   background-color: var(--tpPri);
   border: 0.15rem solid var(--paleAccentThree);
   border-radius: inherit;
@@ -4846,11 +4962,13 @@ main.currentMain {
   padding: 0.5rem;
 }
 .currentProductCard::backdrop {
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 .currentProductCard ul {
   display: flex;
   flex-direction: column;
+  height: -moz-fit-content;
   height: fit-content;
   color: var(--secColor);
 }
@@ -4884,7 +5002,8 @@ main.currentMain {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0.5rem;
-  backdrop-filter: blur(0.3rem);
+  -webkit-backdrop-filter: blur(0.3rem);
+          backdrop-filter: blur(0.3rem);
   background-color: var(--tpPri);
   border: 0.15rem solid var(--paleAccentThree);
   border-top: none;

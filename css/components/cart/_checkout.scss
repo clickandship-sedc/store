@@ -10,6 +10,9 @@
     .checkoutSection {
         display: flex;
         flex-direction: column;
+        background-color: var(--tpPri);
+        border-radius: .5rem;
+        overflow: hidden;
 
         backdrop-filter: blur(.5rem);
 
@@ -38,8 +41,6 @@
                 border-top: none;
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
-
-                backdrop-filter: blur(.5rem);
 
                 .divider {
                     width: 100%;

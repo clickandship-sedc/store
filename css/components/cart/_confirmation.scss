@@ -6,10 +6,10 @@
     margin-inline: auto;
     margin-top: 10%;
     padding: 1.5rem;
-    border: .2rem solid var(--paleAccentTwo);
+    border: 0.25rem solid var(--paleAccentThree);
     gap: 1.5rem;
     border-radius: .5rem;
-    background-color: var(--tpPri);
+    background-color: var(--priColor);
     overflow: hidden;
     color: var(--secColor);
 
@@ -53,8 +53,12 @@
         .price {
             padding: .4rem;
             border-radius: .5rem;
-            color: var(--priColor);
-            background: linear-gradient(45deg, var(--accent) 0%, var(--accent) 30%, var(--secAccent) 70%, var(--accent) 30%, var(--paleAccent));
+            // color: var(--priColor);
+            padding-inline: 0.3vmax;
+            padding-block: 0;
+            border-radius: 0.5rem;
+            border: 0.2rem solid var(--paleAccentThree);
+            background: var(--paleAccent);
         }
     }
 
@@ -70,15 +74,24 @@
         touch-action: manipulation;
         overflow: hidden;
         transition: all .5s cubic-bezier(.19, 1, .22, 1);
+        background: var(--paleAccent);
+        border-radius: 0.7rem;
+        border: 0.25rem solid var(--paleAccentThree);
+        font-size: 1.1rem;
+        color: var(--secColor);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &::before {
-            content: '';
-            inset: -1rem;
-            position: absolute;
-            filter: blur(.5vmax);
-            background: linear-gradient(-45deg, var(--secAccent) 0%, var(--accent) 30%, var(--paleAccentTwo) 50%, var(--secAccent) 70%);
-            z-index: -1;
-        }
+        // &::before {
+        //     content: '';
+        //     inset: -1rem;
+        //     position: absolute;
+        //     filter: blur(.5vmax);
+        //     background: linear-gradient(-45deg, var(--secAccent) 0%, var(--accent) 30%, var(--paleAccentTwo) 50%, var(--secAccent) 70%);
+        //     z-index: -1;
+        // }
 
         &:hover {
             background-color: var(--priColor);
@@ -106,7 +119,8 @@
 .purchaseConfirmation[open] {
     display: flex;
     top: 5rem;
-    &::backdrop{
+
+    &::backdrop {
         background-color: rgba(0, 0, 0, 0.575);
         backdrop-filter: blur(1.5rem);
     }
