@@ -90,7 +90,7 @@ async function setProductsTwo(div, iterationCount, discount, shouldDiscount, arr
         li.addEventListener("click", (e) => {
             // Product clicked
             // SHOULD CALL switchMain() when these event listeners are clicked *** IGNORE FOR NOW
-            console.log(element.id)
+            // console.log(element.id)
             // printProduct(element, singleProductDiv)
             showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct)
             fillProduct(currentProdCard, element)
@@ -98,7 +98,7 @@ async function setProductsTwo(div, iterationCount, discount, shouldDiscount, arr
         li.addEventListener("keydown", (e) => {
             // SHOULD CALL switchMain() when these event listeners are clicked *** IGNORE FOR NOW
             if (e.key === 'Enter') {
-                console.log(element.id)
+                // console.log(element.id)
                 // printProduct(element, singleProductDiv)
                 showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct)
                 fillProduct(currentProdCard, element)
@@ -340,8 +340,8 @@ size.addEventListener("change", (e) => {
     } else {
         filterHelper.size = null
     }
-    console.log(chosenOption);
-    console.log(filterHelper.size);
+    // console.log(chosenOption);
+    // console.log(filterHelper.size);
 })
 
 origin.addEventListener("change", (e) => {
@@ -351,14 +351,14 @@ origin.addEventListener("change", (e) => {
     } else {
         filterHelper.region = null
     }
-    console.log(chosenOption);
-    console.log(filterHelper.region);
+    // console.log(chosenOption);
+    // console.log(filterHelper.region);
 })
 
 applyFiltersBtn.addEventListener("click", () => {
-    console.log("Price", filterHelper.price)
-    console.log("Size", filterHelper.size)
-    console.log("Region", filterHelper.region)
+    // console.log("Price", filterHelper.price)
+    // console.log("Size", filterHelper.size)
+    // console.log("Region", filterHelper.region)
     filteredProducts = displayedProducts
     // if (filterHelper.price !== null && filterHelper.size !== null) {
     //     for (product of displayedProducts) {
@@ -397,15 +397,15 @@ applyFiltersBtn.addEventListener("click", () => {
 
         filteredProducts.forEach((product) => {
             if (product.sizes.includes(filterHelper.size)) {
-                console.log(product.sizes)
+                // console.log(product.sizes)
                 productsWithSelectedSize.push(product)
             }
             filteredProducts = productsWithSelectedSize
         })
     }
-    console.log(filteredProducts)
+    // console.log(filteredProducts)
     if (filterHelper.region !== null) {
-        console.log(filteredProducts)
+        // console.log(filteredProducts)
         filteredProducts = filteredProducts.filter(product => product.shipping.region === filterHelper.region)
     }
     printProducts(filteredProducts, productsDiv)
@@ -641,4 +641,11 @@ resetFiltersBtn.addEventListener("click", () => {
     size.value = "all"
     slider.value = Number(slider.max)
     output.innerHTML = Number(slider.max)
+    printProducts(displayedProducts, productsDiv)
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        if (sortOptions[i].classList.contains("currentOption")) {
+            sortOptions[i].classList.remove("currentOption")
+        }
+    }
 })

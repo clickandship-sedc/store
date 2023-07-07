@@ -48,7 +48,7 @@ cancelBtn.addEventListener('click', (e) => { // Evemt for turning off the regist
 
 registerBtn.addEventListener('click', (e) => { // Event for pressing the sign up button and handling it's states
   if (rgOn) {
-    console.log('Sign up button clicked')
+    // console.log('Sign up button clicked')
     return
   }
   e.preventDefault()

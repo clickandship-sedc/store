@@ -19,7 +19,7 @@ async function fillCategoriesScrollList(ul, array, callback, className) {
     // Add click event listener to whole li
     li.addEventListener("click", () => {
       callback(categories[i])
-      console.log(categories[i].id)
+      // console.log(categories[i].id)
     })
 
     // Add classes to the li element
