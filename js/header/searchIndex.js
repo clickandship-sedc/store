@@ -17,7 +17,7 @@ function getImage(subId) {
             path = flattenedSubCategorie2s[i].image.slice(1)
         }
     }
-    console.log(path)
+    // console.log(path)
     return path
 }
 
@@ -41,12 +41,12 @@ clearBtn.addEventListener('mousedown', () => { // Event listener for fixing bug 
 })
 
 idSearchBtn.addEventListener('click', () => { // Event listener for clicking the search button
-    console.log("Search button")
+    // console.log("Search button")
 }) // TODO
 
 searchInput.addEventListener('keyup', (e) => { // Event listener for handling key press events in search input
     if (e.key === 'Enter') { // NEED TO DO SEARCH FUNCTION IN /CATEGORIE-SECTION/MAIN.JS
-        console.log("enetr Has been pressed should search items")
+        // console.log("enetr Has been pressed should search items")
         return
     }
     if (searchInput.value === '') {
@@ -78,17 +78,17 @@ function suggestions(arr) {  // Filling suggestions function
         let li = document.createElement("li")
         li.setAttribute("tabindex", 0)
         if (i < 6) {
-            console.log(arr[i].item)
+            // console.log(arr[i].item)
             li.innerHTML = `<div> <img src="${getImage(arr[i].item.category.subcategoryid)}"></img><p>${arr[i].item.title}</p></div>  <div><h6>${arr[i].item.category.subcategorytitle}</h6><div class="divider"></div><h5>${arr[i].item.category.categorytitle}</h5></div>`
             suggestionsUl.appendChild(li)
             li.addEventListener("click", () => {
-                console.log(`Result ${arr[i].item.title} has been clicked`)
+                // console.log(`Result ${arr[i].item.title} has been clicked`)
                 showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct)
                 fillProduct(currentProdCard, arr[i].item)
             })
             li.addEventListener("keydown", (e) => {
                 if (e.key === 'Enter') {
-                    console.log(`Result ${arr[i].item.title} has been clicked`)
+                    // console.log(`Result ${arr[i].item.title} has been clicked`)
                     showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct)
                     fillProduct(currentProdCard, arr[i].item)
                 }
@@ -99,11 +99,11 @@ function suggestions(arr) {  // Filling suggestions function
             li.innerHTML = `View all`
             suggestionsUl.appendChild(li)
             li.addEventListener("click", () => {
-                console.log("View all has been clicked")
+                // console.log("View all has been clicked")
             })
             li.addEventListener("keydown", (e) => {
                 if (e.key === 'Enter') {
-                    console.log("View all has been clicked")
+                    // console.log("View all has been clicked")
                 }
             })
             break

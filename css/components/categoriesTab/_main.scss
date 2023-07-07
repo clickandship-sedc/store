@@ -166,6 +166,44 @@
           input[type='range'] {
             width: 100%;
           }
+
+          // #myRange::-webkit-slider-runnable-track {
+          //   border-radius: 5rem;
+          //   background-color: var(--paleAccentThree);
+          // }
+
+          // #myRange {
+          //   background-color: var(--paleAccentThree);
+          //   appearance: none;
+          //   border-radius: 5rem;
+          // }
+
+          input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            
+            height: .5rem;
+            border-radius: 5rem;
+            background-image: linear-gradient(to right, var(--accent), var(--paleAccentThree));
+          }
+          
+          input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 5rem;
+            background-image: linear-gradient(var(--reverseAccent), var(--reverseSecAccent));
+            cursor: ew-resize;
+            // box-shadow: 0 0 2px 0 #555;
+            // transition: background .3s ease-in-out;
+          }
+          
+          input[type=range]::-webkit-slider-runnable-track  {
+            -webkit-appearance: none;
+            box-shadow: none;
+            background: transparent;
+          }
+          
         }
 
         .selectDiv {

@@ -102,7 +102,7 @@ async function fillProduct(container, product) {
         liFourTwo.innerHTML = `<p>Discount</p>
         <h3></h3>`
         ul.appendChild(liFourTwo)
-    } 
+    }
 
     const liFive = document.createElement('li')
     liFive.classList.add("totalProductAmount")
@@ -110,7 +110,7 @@ async function fillProduct(container, product) {
     if (product.sale) {
         liFive.innerHTML = `<p>Total</p> <h2>${(product.price - product.price * (product.sale / 100).toFixed(2)).toFixed(2)}</h2>
         `
-    } else{
+    } else {
         liFive.innerHTML = `<p>Total</p> <div><h2>${(product.price).toFixed(2)}</h2></div>
         `
     }
@@ -282,8 +282,15 @@ function updateDisplayTwo(product, li, amountNumber) {
     }
 
     document.querySelector(`#baseCost-${product.id}`).querySelector("h3").textContent = `$${(product.price * amountNumber.textContent).toFixed(2)}`
-    document.querySelector(`#totalCost-${product.id}`).querySelector("h2").textContent = `$${(((product.price - product.price * (product.sale / 100)) * amountNumber.textContent)+ Number(li.querySelector('h3').textContent.slice(1))).toFixed(2)}`
-    document.querySelector(`#productDiscount-${product.id}`).querySelector("h3").textContent = `-$${(((product.price * product.sale) / 100) * amountNumber.textContent).toFixed(2)}`
+    if (product.sale !== 0) {
+        document.querySelector(`#totalCost-${product.id}`).querySelector("h2").textContent = `$${(((product.price - product.price * (product.sale / 100)) * amountNumber.textContent) + Number(li.querySelector('h3').textContent.slice(1))).toFixed(2)}`
+    } else{
+        document.querySelector(`#totalCost-${product.id}`).querySelector("h2").textContent = `$${((product.price * amountNumber.textContent) + Number(li.querySelector('h3').textContent.slice(1))).toFixed(2)}`
+    }
+
+    if (document.querySelector(`#productDiscount-${product.id}`)) {
+        document.querySelector(`#productDiscount-${product.id}`).querySelector("h3").textContent = `-$${(((product.price * product.sale) / 100) * amountNumber.textContent).toFixed(2)}`
+    }
 }
 
 function isInCart(ID) {

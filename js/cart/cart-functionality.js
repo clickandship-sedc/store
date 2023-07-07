@@ -27,54 +27,6 @@ const summaryList = document.querySelector(".summaryUl")
 ////// Uncoment to clear cart in local storage
 // localStorage.setItem("cart", JSON.stringify([])) 
 
-// ///////// Uncomment one of these to add something to local storage, each one overwrites the previous one called
-// localStorage.setItem("cart", JSON.stringify([{
-//     "title": "Waterproof Car Cover",
-//     "price": 89.99,
-//     "shipping": 15,
-//     "stock": 30,
-//     "id": "aefa415c-832dc-4e6e-a7db-ac4c15125a742",
-//     "sale": 13,
-//     "amount": 1,
-//     "totalPrice": 0
-// }, {
-//     "title": "Waterproof Car Cover",
-//     "price": 89.99,
-//     "shipping": 7,
-//     "stock": 1007,
-//     "id": "aefa495c-82dc-4e46e-3a7db-ac4c1525a742",
-//     "sale": 20,
-//     "amount": 1000,
-//     "totalPrice": 0
-// }, {
-//     "title": "Waterprddddddddddddddddddddddddddddddddddddddddddddddddoof Car Cover",
-//     "price": 89.99,
-//     "shipping": 8,
-//     "stock": 10,
-//     "id": "aef5a415c-82dc-4e56e-a7db-ac4c1525a742",
-//     "sale": 7,
-//     "amount": 1,
-//     "totalPrice": 0
-// }, {
-//     "title": "Waterproof Car Cover",
-//     "price": 89.99,
-//     "shipping": 0,
-//     "stock": 40,
-//     "id": "aefa4215c-828dc-4e6e-a7db-ac4c1525a742",
-//     "sale": 2,
-//     "amount": 5,
-//     "totalPrice": 0
-// }, {
-//     "title": "Waterdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd ddddd  d ddddddddproof Car Cover",
-//     "price": 89.99,
-//     "shipping": 15,
-//     "stock": 19,
-//     "id": "aefa415c-82dc-4e6e-a7db-ac4c91525a742",
-//     "sale": 9,
-//     "amount": 18,
-//     "totalPrice": 0
-// }]))
-
 ///////////////////// FREE SHIPPING AND 0 DISCOUNT
 // localStorage.setItem("cart", JSON.stringify([{
 //     "title": "Waterproof Car Cover",
@@ -111,11 +63,11 @@ const summaryList = document.querySelector(".summaryUl")
 const cartButton = document.querySelector('#cartButton')
 
 cartButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (cartContainer.classList.contains("currentMain")) return;
-  switchMain(cartContainer, "flex");
-  openCart();
-});
+  e.preventDefault()
+  if (cartContainer.classList.contains("currentMain")) return
+  switchMain(cartContainer, "flex")
+  openCart()
+})
 
 function openCart() {
     emptyCart() // Check if cart is empty
@@ -124,84 +76,82 @@ function openCart() {
 }
 
 function emptyCart() {
-  const cartItems = JSON.parse(localStorage.getItem("cart") || "[]");
+  const cartItems = JSON.parse(localStorage.getItem("cart") || "[]")
   if (cartItems.length === 0) {
-    cartContainer.classList.add("cartEmpty");
-    return;
+    cartContainer.classList.add("cartEmpty")
+    return
   }
 
   if (cartContainer.classList.contains("cartEmpty")) {
-    cartContainer.classList.remove("cartEmpty");
+    cartContainer.classList.remove("cartEmpty")
   }
 }
 
 
 async function fillCart(ul) {
-  const cartItems = JSON.parse(localStorage.getItem("cart") || "[]");
+  const cartItems = JSON.parse(localStorage.getItem("cart") || "[]")
 
-  const subCategoriesArray = await fetchJSON('./mock/sub-categories.json');
-  const flattenedSubCategories = flattenObjectArrays(subCategoriesArray);
+  const subCategoriesArray = await fetchJSON('./mock/sub-categories.json')
+  const flattenedSubCategories = flattenObjectArrays(subCategoriesArray)
 
-  ul.innerHTML = '';
+  ul.innerHTML = ''
   for (let i = 0; i < cartItems.length; i++) {
-    const product = cartItems[i];
-    calculateTotalPrice(product); // Calculate total price on each product
-
-    // Calculate discount percentage
-    const discountPercentage = Math.round(((product.price - product.sale) / product.price) * 100);
+    const product = cartItems[i]
+    calculateTotalPrice(product) // Calculate total price on each product
 
     // Li
-    const li = document.createElement("li");
+    const li = document.createElement("li")
 
     // Title
-    const title = document.createElement("h3");
-    title.classList.add("pTitle");
-    const p = document.createElement("p");
-    p.setAttribute("tabindex", 0);
-    p.textContent = product.title;
+    const title = document.createElement("h3")
+    title.classList.add("pTitle")
+    const p = document.createElement("p")
+    p.setAttribute("tabindex", 0)
+    p.textContent = product.title
     p.addEventListener("click", (e) => {
-      console.log(product.id);
-      showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct);
-      fillProduct(currentProdCard, product);
-    });
+      // console.log(product.id)
+      showElement(productTimeouts, productStates.openTime, productStates.showProduct, productStates.enableProduct)
+      fillProduct(currentProdCard, product)
+    })
     p.addEventListener("keydown", (e) => {
       if (e.key === 'Enter') {
-        console.log(product.id);
+        // console.log(product.id)
       }
-    });
-    title.appendChild(p);
+    })
+    title.appendChild(p)
 
+    // console.log(cartItems)
     // Image
     for (let j = 0; j < flattenedSubCategories.length; j++) {
       if (flattenedSubCategories[j].id === cartItems[i].category.subcategoryid) {
-        title.style.setProperty('--bgimg', `url(${flattenedSubCategories[j].image})`);
+        title.style.setProperty('--bgimg', `url(${flattenedSubCategories[j].image})`)
       }
     }
 
     // Info div
-    const infoDiv = document.createElement("div");
+    const infoDiv = document.createElement("div")
 
     // Minus Button
-    const minusButton = document.createElement("button");
-    minusButton.innerHTML = `<span class="material-symbols-outlined">arrow_downward</span>`;
-    minusButton.classList.add("amountBtn");
-    minusButton.id = `minusBtn-${product.id}`;
+    const minusButton = document.createElement("button")
+    minusButton.innerHTML = `<span class="material-symbols-outlined">arrow_downward</span>`
+    minusButton.classList.add("amountBtn")
+    minusButton.id = `minusBtn-${product.id}`
     minusButton.addEventListener("click", () => {
       if (product.amount > 1) {
-        product.amount--;
-        calculateTotalPrice(product);
-        updateCart(cartItems);
-        updateDisplay(li, product, product.id);
-        fillSummary(summaryList);
+        product.amount--
+        calculateTotalPrice(product)
+        updateCart(cartItems)
+        updateDisplay(li, product, product.id)
+        fillSummary(summaryList)
       }
-    });
-    infoDiv.appendChild(minusButton);
+    })
+    infoDiv.appendChild(minusButton)
 
     // Amount Number
-    const amountNumber = document.createElement("h2");
-    amountNumber.classList.add("amount");
-    amountNumber.textContent = product.amount;
-    infoDiv.appendChild(amountNumber);
+    const amountNumber = document.createElement("h2")
+    amountNumber.classList.add("amount")
+    amountNumber.textContent = product.amount
+    infoDiv.appendChild(amountNumber)
 
     // Plus Button
     const plusButton = document.createElement("button");
@@ -365,17 +315,22 @@ function calculateSummary(cartItems) {
       currentDiscount += (product.price * product.amount) * (product.sale / 100); // Calculate total discount as a percentage of the original price
     }
     
-    console.log(currentPrice, 'curPrice')
-    console.log(currentDiscount, 'curDiscount')
-    console.log(currentShipping, 'ONE')
-
-    const discountedPrice = currentPrice - currentDiscount; // Calculate discounted price
+    // console.log(currentPrice, 'curPrice')
+    // console.log(currentDiscount, 'curDiscount')
+    // console.log(currentShipping, 'ONE')
+    let discountedPrice
+    if(currentDiscount === 0){
+      discountedPrice = currentPrice
+    } else{
+      discountedPrice = currentPrice - currentDiscount; // Calculate discounted price
+    }
+    
     currentPrice = currentPrice.toFixed(2);
     currentShipping = currentShipping.toFixed(2);
-  
+    
     currentTotal = (parseFloat(discountedPrice) + parseFloat(currentShipping)).toFixed(2);
-    console.log(discountedPrice, 'DISCOUNT')
-    console.log(currentTotal, 'TWO')
+    // console.log(discountedPrice, 'DISCOUNT')
+    // console.log(currentTotal, 'TWO')
     if (currentTotal < 0) {
       currentTotal = Math.abs(currentTotal).toString();
     }

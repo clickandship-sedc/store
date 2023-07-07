@@ -383,26 +383,32 @@ applyFiltersBtn.addEventListener("click", () => {
     if (filterHelper.size !== null) {
         let productsWithSelectedSize = [];
 
+        // filteredProducts.forEach((product) => {
+        //     if (product.variants && product.variants.size && product.variants.size.length > 0) {
+        //         let hasSelectedSize = product.variants.size.some((size) => {
+        //             return size.option === filterHelper.size
+        //         })
+
+        //         if (hasSelectedSize) {
+        //             productsWithSelectedSize.push(product)
+        //         }
+        //     }
+        // })
+
         filteredProducts.forEach((product) => {
-            if (product.variants && product.variants.size && product.variants.size.length > 0) {
-                let hasSelectedSize = product.variants.size.some((size) => {
-                    return size.option === filterHelper.size
-                })
-
-                if (hasSelectedSize) {
-                    productsWithSelectedSize.push(product)
-                }
+            if (product.sizes.includes(filterHelper.size)) {
+                console.log(product.sizes)
+                productsWithSelectedSize.push(product)
             }
+            filteredProducts = productsWithSelectedSize
         })
-        filteredProducts = productsWithSelectedSize
     }
-
+    console.log(filteredProducts)
     if (filterHelper.region !== null) {
         console.log(filteredProducts)
         filteredProducts = filteredProducts.filter(product => product.shipping.region === filterHelper.region)
     }
     printProducts(filteredProducts, productsDiv)
-    console.log(filteredProducts)
 })
 
 // priceRange.addEventListener("click", (e) => {

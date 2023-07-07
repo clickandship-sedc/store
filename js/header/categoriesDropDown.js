@@ -54,28 +54,15 @@ function shuffleTwo(array) {
 
 
 async function fillRelevant(ul) {
-    const products = await fetchJSON('./mock/products.json')
-    const flattenedProducts = flattenObjectArrays(products)
-    const subCategoriesArray = await fetchJSON('./mock/new-sub-categories.json')
-    const flattenedSubCategories = flattenObjectArrays(subCategoriesArray)
-
-    let tempArray = shuffleTwo(flattenedProducts)
-
     for (let i = 0; i < 2; i++) {
         const li = document.createElement("li")
-        for (let j = 0; j < flattenedSubCategories.length; j++) {
-            const element = flattenedSubCategories[j];
-            if (element.id === tempArray[i].category.subcategoryid) {
-                li.style.setProperty('--bgImg', `url(${element.image})`)
-            }
+        if (i < 1) {
+            li.style.setProperty('--bgImg', `url("../imgs/photoOn.png")`)
+        }
+        else {
+            li.style.setProperty('--bgImg', `url("../imgs/photoTwo.png")`)
         }
 
-        const title = document.createElement("h3")
-        title.innerHTML = `ONLY $${tempArray[i].price}`
-        const par = document.createElement("p")
-        par.innerHTML = tempArray[i].title
-        li.appendChild(title)
-        li.appendChild(par)
         ul.appendChild(li)
     }
 }
@@ -112,11 +99,11 @@ async function setSubCats(currentCat) {
         subCategoryItems[i].querySelector('p').innerHTML = randomCat.description;
         subCategoryItems[i].style.setProperty('--bgimg', `url(${randomCat.image})`);
         subCategoryItems[i].addEventListener("click", () => {
-            console.log(randomCat.id)
+            // console.log(randomCat.id)
         })
         subCategoryItems[i].addEventListener("keydown", () => {
             if (e.key === 'Enter') {
-                console.log(randomCat.id)
+                // console.log(randomCat.id)
             }
         })
 
