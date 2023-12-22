@@ -115,8 +115,8 @@ function App() {
             <Header></Header>
             <DDBkgf></DDBkgf>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/category/:catId" element={<CategoriesList />} />
+              <Route path="" element={<Home />} />
+              <Route path="category/:catId" element={<CategoriesList />} />
               <Route path="/subcategory/:subId" element={<SubCategory />} />
               <Route path="/manufacturer/:manufacturerId" element={<Manufacturer />} />
               <Route path="/search/:searchid" element={<Search />} />
