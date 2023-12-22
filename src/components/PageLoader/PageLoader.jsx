@@ -86,6 +86,10 @@ function PageLoader() {
                         <span style={{ '--i': '9' }}>p</span>
                     </h1>}
 
+                <div className={`demo`}>
+                    <p>This is only a demo page, presented with mock hard-coded data.</p>
+                    <p>Actual project <a target="_blank" rel="noopener noreferrer" href="https://github.com/sedc-codecademy/sp2023-cp02-dsw-4">github</a></p>
+                </div>
                 <div className={`somethingWrong ${isError && "true"}`}>
                     <p>Something went wrong, log-out or reload the page.</p>
                     <div>

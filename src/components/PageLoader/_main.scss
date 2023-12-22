@@ -19,7 +19,7 @@
     -webkit-user-select: none;
     user-select: none;
 
-    .somethingWrong {
+    .somethingWrong,.demo {
         display: flex;
         gap: 1.5rem;
         align-items: center;
@@ -29,6 +29,9 @@
         transition: opacity .3s;
 
         &.true {
+            opacity: 1;
+        }
+        &.demo{
             opacity: 1;
         }
 
@@ -43,6 +46,10 @@
             font-family: Matter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
             text-align: center;
             padding: 1rem;
+        }
+
+        a{
+            color: var(--accent);
         }
 
         div{

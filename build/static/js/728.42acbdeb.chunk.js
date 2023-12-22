@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdropship_react=self.webpackChunkdropship_react||[]).push([[728],{7728:(e,t,o)=>{o.r(t),o.d(t,{default:()=>u});var s=o(2791),r=o(7689);function u(){const{pathname:e}=(0,r.TH)();return(0,s.useEffect)((()=>{setTimeout((()=>{window.scrollTo({top:0,behavior:"smooth"})}),0)}),[e]),null}}}]);
+//# sourceMappingURL=728.42acbdeb.chunk.js.map

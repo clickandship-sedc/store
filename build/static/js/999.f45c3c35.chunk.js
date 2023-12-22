@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdropship_react=self.webpackChunkdropship_react||[]).push([[999],{8107:(r,e,s)=>{s.r(e),s.d(e,{default:()=>d});s(2791);var c=s(184);const d=function(){return(0,c.jsx)("div",{children:"AdminOrders"})}}}]);
+//# sourceMappingURL=999.f45c3c35.chunk.js.map
