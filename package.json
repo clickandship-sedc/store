@@ -1,6 +1,6 @@
 {
   "name": "dropship-react",
-  "homepage": "https://clickandship-sedc.github.io/",
+  "homepage": "https://clickandship-sedc.github.io/store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
