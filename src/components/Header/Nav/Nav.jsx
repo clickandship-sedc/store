@@ -118,14 +118,14 @@ export default function Nav() {
     const handleSubCatClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`subcategory/${e}`)
+            navigate(`store/subcategory/${e}`)
         }, 500)
     }
 
     const handleViewAllClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`category/${e}`)
+            navigate(`store/category/${e}`)
         }, 500)
     }
 
@@ -238,7 +238,7 @@ export default function Nav() {
                             )}
                             <li>
                                 <NavLink
-                                    to="cart"
+                                    to="/cart"
                                     disabled={activeLink === "store/cart"}
                                     onClick={closeSettings}
                                     className='cartLink'
@@ -358,7 +358,7 @@ export default function Nav() {
                                 </li>
                                 <li>
                                     <NavLink
-                                        to="user"
+                                        to="/user"
                                         disabled={activeLink === "store/user"}
                                         tabIndex={0}
                                         onClick={closeSettings}
@@ -380,7 +380,7 @@ export default function Nav() {
                                 {!isMobile && <li className="divider"></li>}
                                 <li>
                                     <NavLink
-                                        to="settings"
+                                        to="/settings"
                                         disabled={activeLink === "store/settings"}
                                         onClick={closeSettings}
                                     >

@@ -79,7 +79,7 @@ function SearchBar() {
 
     const handleSearchClick = () => {
         if (searchData?.length > 0 && searchValue?.length > 0) {
-            navigate(`search/${searchValue}`)
+            navigate(`store/search/${searchValue}`)
             setIsInputFocused(false)
         }
     }
@@ -108,22 +108,22 @@ function SearchBar() {
 
     const handleSubCatClick = (e) => {
         dispatch(toggleCatDropDown())
-        navigate(`subcategory/${e}`)
+        navigate(`store/subcategory/${e}`)
     }
 
     const handleViewAllClick = (e) => {
         dispatch(toggleCatDropDown())
-        navigate(`category/${e}`)
+        navigate(`store/category/${e}`)
     }
 
     const handleClickSuggestion = (e) => {
-        navigate(`productDetails/${e}`)
+        navigate(`store/productDetails/${e}`)
         searchProduct(e)
         setIsInputFocused(false)
     }
 
     const handleClickViewAll = () => {
-        navigate(`search/${searchValue}`)
+        navigate(`store/search/${searchValue}`)
         setIsInputFocused(false)
     }
 
@@ -205,16 +205,16 @@ function SearchBar() {
                 <h3>Frequent Searches</h3>
                 <ul>
                     <li>
-                        <NavLink to={`search/iphone`}>iphone</NavLink>
+                        <NavLink to={`/search/iphone`}>iphone</NavLink>
                     </li>
                     <li>
-                        <NavLink to={`search/denim`}>denim</NavLink>
+                        <NavLink to={`/search/denim`}>denim</NavLink>
                     </li>
                     <li>
-                        <NavLink to={`search/samsung`}>samsung</NavLink>
+                        <NavLink to={`/search/samsung`}>samsung</NavLink>
                     </li>
                     <li>
-                        <NavLink to={`search/apple`}>apple</NavLink>
+                        <NavLink to={`/search/apple`}>apple</NavLink>
                     </li>
                 </ul>
             </div>}

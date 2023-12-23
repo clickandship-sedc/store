@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function BigCategory({subcategory}) {
     return (
         <li>
-            <NavLink to={`subcategory/${subcategory.id}`}>
+            <NavLink to={`/subcategory/${subcategory.id}`}>
                 <img src={subcategory.image} alt="category" />
                 <div>
                     <h3>{subcategory.name}</h3>

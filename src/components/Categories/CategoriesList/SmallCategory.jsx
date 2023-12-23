@@ -5,7 +5,7 @@ import ImageLoader from "../../ImageLoader/ImageLoader"
 export function SmallCategory(props) {
     return (
         <li>
-            <NavLink to={`subcategory/${props.subcategory.id}`}>
+            <NavLink to={`/subcategory/${props.subcategory.id}`}>
                 <ImageLoader
                     url={props.subcategory.image}
                     alt={props.subcategory.name}
@@ -24,7 +24,7 @@ export function SmallCategory(props) {
 export function BiggerCategory(props) {
     return (
         <li>
-            <NavLink to={`category/${props.category.id}`}>
+            <NavLink to={`/category/${props.category.id}`}>
                 <ImageLoader
                     url={props.category.image}
                     alt={props.category.name}
