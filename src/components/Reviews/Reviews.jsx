@@ -511,7 +511,7 @@ export function UserReviews(props) {
                 </div>
             </form>
             <NavLink
-                to={`store/productDetails/${props.review.productId}`}
+                to={`productDetails/${props.review.productId}`}
                 className="product"
             >
                 <ImageLoader

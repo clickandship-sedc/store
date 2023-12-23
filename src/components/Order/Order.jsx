@@ -160,7 +160,7 @@ export function UserOrder({ order }) {
             <ul className="orderItems">
                 {order.orderItems.map((orderItem) =>
                     <li key={orderItem.id}>
-                        <NavLink to={`store/productDetails/${orderItem.productId}`}>
+                        <NavLink to={`productDetails/${orderItem.productId}`}>
                             <ImageLoader
                                 url={orderItem.image}
                                 alt={orderItem.name}

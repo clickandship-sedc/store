@@ -117,7 +117,7 @@ function SearchBar() {
     }
 
     const handleClickSuggestion = (e) => {
-        navigate(`store/productDetails/${e}`)
+        navigate(`productDetails/${e}`)
         searchProduct(e)
         setIsInputFocused(false)
     }
