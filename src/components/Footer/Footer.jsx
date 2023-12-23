@@ -288,13 +288,13 @@ function Footer() {
                     <p>© 2023 Click & Ship All Rights and Lefts reserved.</p>
                     <ul>
                         <li>
-                            <Link to={"/privacy"}>Privacy Policy</Link>
+                            <Link to={"/store/privacy"}>Privacy Policy</Link>
                         </li>
                         <li>
-                            <Link to={"/disclaimer"}>Disclaimer</Link>
+                            <Link to={"/store/disclaimer"}>Disclaimer</Link>
                         </li>
                         <li>
-                            <Link to={"/location"}>Location Services</Link>
+                            <Link to={"/store/location"}>Location Services</Link>
                         </li>
                     </ul>
                 </div>

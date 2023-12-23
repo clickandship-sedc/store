@@ -118,14 +118,14 @@ export default function Nav() {
     const handleSubCatClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`store/subcategory/${e}`)
+            navigate(`/store/subcategory/${e}`)
         }, 500)
     }
 
     const handleViewAllClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`store/category/${e}`)
+            navigate(`/store/category/${e}`)
         }, 500)
     }
 
@@ -238,7 +238,7 @@ export default function Nav() {
                             )}
                             <li>
                                 <NavLink
-                                    to="/cart"
+                                    to="/store/cart"
                                     disabled={activeLink === "store/cart"}
                                     onClick={closeSettings}
                                     className='cartLink'

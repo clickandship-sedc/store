@@ -7,7 +7,7 @@ export default function ProductCard({ product, subCatImage }) {
 
   return (
     <li className="product-card">
-      <NavLink to={`/productDetails/${product.id}`}>
+      <NavLink to={`/store/productDetails/${product.id}`}>
         <ImageLoader
           url={product.image}
           alt={product.name}

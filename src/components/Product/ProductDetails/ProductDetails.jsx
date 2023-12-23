@@ -217,7 +217,7 @@ function ProductDetails() {
               <div className="product-header">
                 <h2 className="product-title">
                   <span>{productData.name}</span>
-                  <NavLink to={`/manufacturer/${productData.manufacturer.id}`}>
+                  <NavLink to={`/store/manufacturer/${productData.manufacturer.id}`}>
                     <p>{productData.manufacturer.name}</p>
                     <ImageLoader
                       url={productData.manufacturer.image}
@@ -402,7 +402,7 @@ function ProductDetails() {
           <div className="block-header">
             <div>
               <h1>Related products</h1>
-              <NavLink to={subData ? `store/subcategory/${subData.id}` : 'store/'}>
+              <NavLink to={subData ? `/store/subcategory/${subData.id}` : 'store/'}>
                 <p>Browse All</p>
                 <svg viewBox="0 0 32 32">
                   <path
