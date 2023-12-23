@@ -143,7 +143,7 @@ export default function Nav() {
                                 <li>
                                     <NavLink
                                         className="mobileLogo"
-                                        to="store/"
+                                        to="/store/"
                                         exact="true"
                                         disabled={activeLink === "store/"}
                                         onClick={closeSettings}

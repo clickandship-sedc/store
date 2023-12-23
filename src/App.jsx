@@ -70,7 +70,7 @@ function App() {
                   path="*"
                   element={
                     <NotFound
-                      link={"store/"}
+                      link={"/store/"}
                       title={"oh no... disaster!!!"}
                       message={"stop trying to break our website, please )"}
                     />
@@ -95,7 +95,7 @@ function App() {
                 path="*"
                 element={
                   <NotFound
-                    link={"store/"}
+                  link={"/store/"}
                     title={"oh no... disaster!!!"}
                     message={"stop trying to break our website, please )"}
                   />
@@ -131,7 +131,7 @@ function App() {
                 path="*"
                 element={
                   <NotFound
-                    link={"store/"}
+                  link={"/store/"}
                     title={"oh no... disaster!!!"}
                     message={"stop trying to break our website, please )"}
                   />

@@ -42,7 +42,7 @@ function CategoriesList() {
             {
                 isCatPending ? (
                     <BigLoadingDiv
-                        link={"store/"}
+                    link={"/store/"}
                         title={"loading category..."}
                         message={"you can click here to retry if it's taking too long"}
                         refetch={catRefetch}
@@ -71,7 +71,7 @@ function CategoriesList() {
                             <ul className="manufacturer-logos">
                                 {manufacturers.map((e) => (
                                     <li key={e.id}>
-                                        <NavLink data-manufacturer={e.name} to={`/manufacturer/${e.id}`}>
+                                        <NavLink data-manufacturer={e.name} to={`/store/manufacturer/${e.id}`}>
                                             <ImageLoader
                                                 alt={e.name}
                                                 url={e.image}
@@ -86,7 +86,7 @@ function CategoriesList() {
                     </main>
                 ) : isCatError ? (
                     <NotFound
-                    link={"store/"}
+                    link={"/store/"}
                         title={"dont have that one"}
                         message={catError?.message}
                     ></NotFound>

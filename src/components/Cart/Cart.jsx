@@ -785,7 +785,7 @@ function Cart() {
             ) : (
                 <div className="cartEmptyDiv">
                     <EmptyCard></EmptyCard>
-                    <NavLink to={"store/"}>
+                    <NavLink to={"/store/"}>
                         <h1>your cart is empty</h1>
                         <p>add items to your cart, no need for an account</p>
                     </NavLink>
@@ -795,7 +795,7 @@ function Cart() {
             <div className="block-header">
                 <div>
                     <h1>Popular products</h1>
-                    <NavLink to={'store/'}>
+                    <NavLink to={'/store/'}>
                         <p>Browse All</p>
                         <svg viewBox="0 0 32 32">
                             <path

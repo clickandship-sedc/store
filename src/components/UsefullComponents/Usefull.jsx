@@ -8,7 +8,7 @@ import { setNotificationData, setShowNotification } from "../../store/slices/not
 export function DetailsNav(props) {
   return (
     <div className="categoriesHeader">
-      <NavLink to={"store/"}>Home</NavLink>
+      <NavLink to={"/store/"}>Home</NavLink>
       <svg viewBox="0 0 32 32">
         <path
           fill="currentColor"

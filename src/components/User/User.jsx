@@ -51,7 +51,7 @@ function User() {
     <>
       {isUserPending ? (
         <BigLoadingDiv
-        link={"store/"}
+        link={"/store/"}
           title={"loading user..."}
           message={"you can click here to retry if its taking too long"}
           refetch={userRefetch}
@@ -274,7 +274,7 @@ function User() {
       </main>
       ) : isUserErrro ? (
         <NotFound
-        link={"store/"}
+        link={"/store/"}
           title={"could't load user"}
           message={userError.message}
         ></NotFound>

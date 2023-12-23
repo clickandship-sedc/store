@@ -24,7 +24,7 @@ function Search() {
             {
                 isSearchPending ? (
                     <BigLoadingDiv
-                    link={"store/"}
+                    link={"/store/"}
                         title={"getting search results..."}
                         message={"you can click here to retry if its taking too long"}
                         refetch={searchRefetch}
@@ -36,7 +36,7 @@ function Search() {
                     }}></CategoriesDetails>
                 ) : isSearchError ? (
                     <NotFound
-                    link={"store/"}
+                    link={"/store/"}
                         title={"no results found"}
                         message={searchError.message}
                     ></NotFound>

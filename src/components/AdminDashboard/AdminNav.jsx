@@ -6,7 +6,7 @@ const AdminNav = () => {
     <div className="navigation">
       <ul>
         <li>
-          <NavLink to={"store/"} exact="true">Categories</NavLink>
+          <NavLink to={"/store/"} exact="true">Categories</NavLink>
         </li>
         <li>
           <NavLink to={"/store/sub"}>Sub-Categories</NavLink>

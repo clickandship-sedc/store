@@ -189,7 +189,7 @@ function ProductDetails() {
     <>
       {isProdPending ? (
         <BigLoadingDiv
-        link={"store/"}
+        link={"/store/"}
           title={"loading product..."}
           message={"you can click here to retry if its taking too long"}
           refetch={prodRefetch}
@@ -435,7 +435,7 @@ function ProductDetails() {
         </main>
       ) : isProdError ? (
         <NotFound
-        link={"store/"}
+        link={"/store/"}
           title={"dont have that one"}
           message={productError.message}
         ></NotFound>
