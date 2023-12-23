@@ -358,7 +358,7 @@ export default function Nav() {
                                 </li>
                                 <li>
                                     <NavLink
-                                        to="/user"
+                                        to="/store/user"
                                         disabled={activeLink === "store/user"}
                                         tabIndex={0}
                                         onClick={closeSettings}
@@ -380,7 +380,7 @@ export default function Nav() {
                                 {!isMobile && <li className="divider"></li>}
                                 <li>
                                     <NavLink
-                                        to="/settings"
+                                        to="/store/settings"
                                         disabled={activeLink === "store/settings"}
                                         onClick={closeSettings}
                                     >
