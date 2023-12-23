@@ -9,16 +9,16 @@ const AdminNav = () => {
           <NavLink to={"store/"} exact="true">Categories</NavLink>
         </li>
         <li>
-          <NavLink to={"store/sub"}>Sub-Categories</NavLink>
+          <NavLink to={"sub"}>Sub-Categories</NavLink>
         </li>
         <li>
-          <NavLink to={"store/products"}>Products</NavLink>
+          <NavLink to={"products"}>Products</NavLink>
         </li>
         <li>
-          <NavLink to={"store/orders"}>Orders</NavLink>
+          <NavLink to={"orders"}>Orders</NavLink>
         </li>
         <li>
-          <NavLink to={"store/users"}>Users</NavLink>
+          <NavLink to={"users"}>Users</NavLink>
         </li>
       </ul>
     </div>

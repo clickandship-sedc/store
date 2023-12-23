@@ -161,7 +161,7 @@ function User() {
         <div className="block-header">
           <div>
             <h1>User Orders</h1>
-            <NavLink to={'store/cart'}>
+            <NavLink to={'cart'}>
               <p>View Cart</p>
               <svg viewBox="0 0 32 32">
                 <path

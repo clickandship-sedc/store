@@ -258,7 +258,7 @@ function AdminCategories() {
                                         </li>
                                         {cCatData.subcategories.map((e) => (
                                             <li key={e.id}>
-                                                <NavLink to={`store/sub/${e.id}`}>
+                                                <NavLink to={`sub/${e.id}`}>
                                                     <ImageLoader
                                                         url={e.image}
                                                         alt={e.name}

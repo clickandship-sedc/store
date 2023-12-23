@@ -1,7 +1,7 @@
 {
   "name": "dropship-react",
   "version": "0.1.0",
-  "homepage": "https://clickandship-sedc.github.io/store",
+  "homepage": "https://clickandship-sedc.github.io/store/",
   "private": true,
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.23.3",

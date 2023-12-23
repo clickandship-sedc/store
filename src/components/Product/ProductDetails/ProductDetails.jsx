@@ -217,7 +217,7 @@ function ProductDetails() {
               <div className="product-header">
                 <h2 className="product-title">
                   <span>{productData.name}</span>
-                  <NavLink to={`store/manufacturer/${productData.manufacturer.id}`}>
+                  <NavLink to={`manufacturer/${productData.manufacturer.id}`}>
                     <p>{productData.manufacturer.name}</p>
                     <ImageLoader
                       url={productData.manufacturer.image}

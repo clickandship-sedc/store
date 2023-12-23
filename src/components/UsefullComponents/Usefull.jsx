@@ -15,7 +15,7 @@ export function DetailsNav(props) {
           d="M22 16L12 26l-1.4-1.4l8.6-8.6l-8.6-8.6L12 6z"
         />
       </svg>
-      <NavLink to={`store/category/${props.categoryid}`}>
+      <NavLink to={`category/${props.categoryid}`}>
         {props.categorytitle}
       </NavLink>
       {props.subcategoryid && (
@@ -26,7 +26,7 @@ export function DetailsNav(props) {
               d="M22 16L12 26l-1.4-1.4l8.6-8.6l-8.6-8.6L12 6z"
             />
           </svg>
-          <NavLink to={`store/subcategory/${props.subcategoryid}`}>
+          <NavLink to={`subcategory/${props.subcategoryid}`}>
             {props.subcategorytitle}
           </NavLink>
         </>
