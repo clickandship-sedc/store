@@ -120,8 +120,8 @@ function App() {
               <Route path="/subcategory/:subId" element={<SubCategory />} />
               <Route path="/manufacturer/:manufacturerId" element={<Manufacturer />} />
               <Route path="/search/:searchid" element={<Search />} />
-              <Route path="/productDetails/:productId" element={<ProductDetails />} />
-              <Route path="/user" element={<User />} />
+              <Route path="store/productDetails/:productId" element={<ProductDetails />} />
+              <Route path="store/user" element={<User />} />
               <Route path="/settings" element={<UserSettings />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/privacy" element={<Privacy />} />
