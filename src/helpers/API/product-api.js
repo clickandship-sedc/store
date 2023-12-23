@@ -14,7 +14,7 @@ export async function getProductByID(ID) {
         "manufacturer": {
             "id": "techlg",
             "name": "LG",
-            "image": "/assets/imgs/manufacturers/lg.jpg"
+            "image": "/store/assets/imgs/manufacturers/lg.jpg"
         },
         "productSizes": [
             {
@@ -57,7 +57,7 @@ export async function getProductByID(ID) {
         "price": 1099,
         "discountPercentage": 0,
         "discountedPrice": 1099,
-        "image": "/assets/imgs/products/Phone-Google-6-pro.jpg",
+        "image": "/store/assets/imgs/products/Phone-Google-6-pro.jpg",
         "rating": 4
     }
 }

@@ -7,13 +7,13 @@ export default function ProductCard({ product, subCatImage }) {
 
   return (
     <li className="product-card">
-      <NavLink to={`/productDetails/${product.id}`}>
+      <NavLink to={`store/productDetails/${product.id}`}>
         <ImageLoader
           url={product.image}
           alt={product.name}
-          backupUrl={subCatImage || '/assets/imgs/404/product404.png'}
+          backupUrl={subCatImage || '/store/assets/imgs/404/product404.png'}
           backupAlt="Product Image 404"
-          thirdBackupUrl={'/assets/imgs/404/product404.png'}
+          thirdBackupUrl={'/store/assets/imgs/404/product404.png'}
         ></ImageLoader>
         <div className='infoDiv'>
           <p className='title'>{product.name}</p>

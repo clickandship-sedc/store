@@ -14,7 +14,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -58,7 +58,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -90,7 +90,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -122,7 +122,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -160,7 +160,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -219,7 +219,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -274,7 +274,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -330,7 +330,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -374,7 +374,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -412,7 +412,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -461,7 +461,7 @@ export async function getManufacturerByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -507,7 +507,7 @@ export async function getManufacturerByID(ID) {
         ],
         "id": "techlg",
         "name": "LG",
-        "image": "/assets/imgs/manufacturers/lg.jpg"
+        "image": "/store/assets/imgs/manufacturers/lg.jpg"
     }
 }
 

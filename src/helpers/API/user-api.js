@@ -2,7 +2,7 @@ const mainURL = process.env.REACT_APP_BASE_URL
 
 export async function getUser(ID, tokens) {
     return {
-        "image": "/assets/imgs/user/image.jpg",
+        "image": "/store/assets/imgs/user/image.jpg",
         "userRatings": [
             {
                 "id": "7c802810-637a-4f35-b8f2-9fb49452a11a",

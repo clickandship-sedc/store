@@ -15,7 +15,7 @@ function Reviews(props) {
                 <ImageLoader
                     url={props.review.image}
                     alt={props.review.name}
-                    backupUrl="/assets/imgs/404/user404.png"
+                    backupUrl="/store/assets/imgs/404/user404.png"
                     backupAlt="Usere 404"
                 ></ImageLoader>
                 <div className="review-author-info">
@@ -154,7 +154,7 @@ export function EditReview(props) {
                     <ImageLoader
                         url={props.review.image}
                         alt={props.review.name}
-                        backupUrl="/assets/imgs/404/user404.png"
+                        backupUrl="/store/assets/imgs/404/user404.png"
                         backupAlt="Usere 404"
                     ></ImageLoader>
                     <div className="review-author-info">
@@ -376,7 +376,7 @@ export function UserReviews(props) {
                         <ImageLoader
                             url={props.userImage}
                             alt={props.review.name}
-                            backupUrl="/assets/imgs/404/user404.png"
+                            backupUrl="/store/assets/imgs/404/user404.png"
                             backupAlt="Usere 404"
                         ></ImageLoader>
                         <div className="review-author-info">
@@ -511,13 +511,13 @@ export function UserReviews(props) {
                 </div>
             </form>
             <NavLink
-                to={`/productDetails/${props.review.productId}`}
+                to={`store/productDetails/${props.review.productId}`}
                 className="product"
             >
                 <ImageLoader
                     url={props.review.productImage}
                     alt={props.review.productName}
-                    backupUrl="/assets/imgs/404/product404.png"
+                    backupUrl="/store/assets/imgs/404/product404.png"
                     backupAlt="Product 404"
                 ></ImageLoader>
                 <p>{props.review.productName}  <Stars

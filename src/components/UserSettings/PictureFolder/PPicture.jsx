@@ -51,7 +51,7 @@ function ProfilePicture({ image, userInfo, handleInputEdit }) {
         <ImageLoader
           url={image.url}
           alt={image.alt}
-          backupUrl="/assets/imgs/404/user404.png"
+          backupUrl="/store/assets/imgs/404/user404.png"
           backupAlt="User 404"
         ></ImageLoader>
       </div>

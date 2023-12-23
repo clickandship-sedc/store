@@ -785,7 +785,7 @@ function Cart() {
             ) : (
                 <div className="cartEmptyDiv">
                     <EmptyCard></EmptyCard>
-                    <NavLink to={"/"}>
+                    <NavLink to={"store/"}>
                         <h1>your cart is empty</h1>
                         <p>add items to your cart, no need for an account</p>
                     </NavLink>
@@ -795,7 +795,7 @@ function Cart() {
             <div className="block-header">
                 <div>
                     <h1>Popular products</h1>
-                    <NavLink to={'/'}>
+                    <NavLink to={'store/'}>
                         <p>Browse All</p>
                         <svg viewBox="0 0 32 32">
                             <path
@@ -883,7 +883,7 @@ const CartItem = ({
             <ImageLoader
                 url={item.image}
                 alt={item.name}
-                backupUrl="/assets/imgs/404/product404.png"
+                backupUrl="/store/assets/imgs/404/product404.png"
                 backupAlt="Product Image 404"
             ></ImageLoader>
             <div className="itemInfo">

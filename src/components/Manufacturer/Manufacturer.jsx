@@ -25,7 +25,7 @@ function Manufacturer() {
             {
                 isManuPending ? (
                     <BigLoadingDiv
-                        link={"/"}
+                    link={"store/"}
                         title={"loading manufacturer..."}
                         message={"you can click here to retry if its taking too long"}
                         refetch={manuRefetch}
@@ -34,7 +34,7 @@ function Manufacturer() {
                     <CategoriesDetails origin={'manufacturer'} dataObject={manuData}></CategoriesDetails>
                 ) : isManuError ? (
                     <NotFound
-                        link={"/"}
+                    link={"store/"}
                         title={"dont have that one"}
                         message={manuError.message}
                     ></NotFound>

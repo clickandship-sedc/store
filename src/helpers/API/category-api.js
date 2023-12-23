@@ -5,13 +5,13 @@ export async function getCategories() {
         {
             "id": "autoaccessories",
             "name": "Automobile Accessories",
-            "image": "/assets/imgs/categories/autoacc.jpg",
-            "icon": "/assets/imgs/categories/autoaccsmall.jpg",
+            "image": "/store/assets/imgs/categories/autoacc.jpg",
+            "icon": "/store/assets/imgs/categories/autoaccsmall.jpg",
             "subcategories": [
                 {
                     "id": "04dba8ac-a3ed-41a6-a268-3c984bd3ac6c",
                     "name": "Car Organizers",
-                    "image": "/assets/imgs/subCategories/storage.jpg",
+                    "image": "/store/assets/imgs/subCategories/storage.jpg",
                     "description": "Storage solutions for cars, including trunk organizers, backseat organizers, and console organizers.",
                     "category": {
                         "id": "autoaccessories",
@@ -21,7 +21,7 @@ export async function getCategories() {
                 {
                     "id": "10884d4e-343f-43f8-9094-2c2e12f072ef",
                     "name": "Floor Mats",
-                    "image": "/assets/imgs/subCategories/mats.jpg",
+                    "image": "/store/assets/imgs/subCategories/mats.jpg",
                     "description": "Custom-fit floor mats to keep the interior of the car clean and tidy.",
                     "category": {
                         "id": "autoaccessories",
@@ -31,7 +31,7 @@ export async function getCategories() {
                 {
                     "id": "4931c0cf-16e5-4d7f-88a4-a8af12dfe902",
                     "name": "Car Cleaning Kits",
-                    "image": "/assets/imgs/subCategories/cleaningkit.jpg",
+                    "image": "/store/assets/imgs/subCategories/cleaningkit.jpg",
                     "description": "Kits containing everything needed to clean and detail the interior and exterior of a car.",
                     "category": {
                         "id": "autoaccessories",
@@ -41,7 +41,7 @@ export async function getCategories() {
                 {
                     "id": "73b4c13c-0a3b-41bb-97f9-3a7a4fd632db",
                     "name": "Car Styling",
-                    "image": "/assets/imgs/subCategories/style.jpg",
+                    "image": "/store/assets/imgs/subCategories/style.jpg",
                     "description": "Decorative and functional accessories to enhance the appearance and performance of a car, including spoilers, grilles, and rims.",
                     "category": {
                         "id": "autoaccessories",
@@ -51,7 +51,7 @@ export async function getCategories() {
                 {
                     "id": "b90e4c77-7c78-43b5-b8a8-9f25c6c6b24c",
                     "name": "Car Lights",
-                    "image": "/assets/imgs/subCategories/carlight.jpg",
+                    "image": "/store/assets/imgs/subCategories/carlight.jpg",
                     "description": "LED lights and bulbs for headlights, taillights, interior lighting, and decorative lighting.",
                     "category": {
                         "id": "autoaccessories",
@@ -61,7 +61,7 @@ export async function getCategories() {
                 {
                     "id": "ba523e6e-32cb-43a5-be44-734bd769aaa2",
                     "name": "Seat Covers",
-                    "image": "/assets/imgs/subCategories/seatcover.jpg",
+                    "image": "/store/assets/imgs/subCategories/seatcover.jpg",
                     "description": "Protective covers for car seats to prevent wear and tear, stains, and damage.",
                     "category": {
                         "id": "autoaccessories",
@@ -71,7 +71,7 @@ export async function getCategories() {
                 {
                     "id": "d3e3c11b-809b-4d22-98f8-58333377b784",
                     "name": "Car Covers",
-                    "image": "/assets/imgs/subCategories/cover.jpg",
+                    "image": "/store/assets/imgs/subCategories/cover.jpg",
                     "description": "Protective covers for cars to shield them from the elements and other hazards.",
                     "category": {
                         "id": "autoaccessories",
@@ -81,7 +81,7 @@ export async function getCategories() {
                 {
                     "id": "d821754f-9e4d-4758-b162-52f0fee2d7f9",
                     "name": "Car Fragrances",
-                    "image": "/assets/imgs/subCategories/airfreshener.jpg",
+                    "image": "/store/assets/imgs/subCategories/airfreshener.jpg",
                     "description": "Air fresheners and scents to keep the car smelling fresh and pleasant.",
                     "category": {
                         "id": "autoaccessories",
@@ -91,7 +91,7 @@ export async function getCategories() {
                 {
                     "id": "dcc14cf4-623e-46a5-b993-06722b09a093",
                     "name": "Car Phone Mounts",
-                    "image": "/assets/imgs/subCategories/mount.jpg",
+                    "image": "/store/assets/imgs/subCategories/mount.jpg",
                     "description": "Mounts and holders for smartphones and other devices to keep them secure and accessible while driving.",
                     "category": {
                         "id": "autoaccessories",
@@ -101,7 +101,7 @@ export async function getCategories() {
                 {
                     "id": "ee83fee6-33fc-4509-b462-3fb11cc8e6a1",
                     "name": "Car Chargers",
-                    "image": "/assets/imgs/subCategories/carcharger.jpg",
+                    "image": "/store/assets/imgs/subCategories/carcharger.jpg",
                     "description": "Chargers and adapters for charging phones, tablets, and other devices in the car.",
                     "category": {
                         "id": "autoaccessories",
@@ -113,13 +113,13 @@ export async function getCategories() {
         {
             "id": "beauty",
             "name": "Beauty",
-            "image": "/assets/imgs/categories/beauty.jpg",
-            "icon": "/assets/imgs/categories/beautysmall.jpg",
+            "image": "/store/assets/imgs/categories/beauty.jpg",
+            "icon": "/store/assets/imgs/categories/beautysmall.jpg",
             "subcategories": [
                 {
                     "id": "248bc1e7-e25c-4d19-b1d8-ab1105938ed0",
                     "name": "Sun Care",
-                    "image": "/assets/imgs/subCategories/sun.jpg",
+                    "image": "/store/assets/imgs/subCategories/sun.jpg",
                     "description": "Find sun care productids like sunscreen, after-sun lotion, and self-tanning productids.",
                     "category": {
                         "id": "beauty",
@@ -129,7 +129,7 @@ export async function getCategories() {
                 {
                     "id": "29a045e0-76cd-4fa8-9dd1-12a72fbac60b",
                     "name": "Beauty Tools & Accessories",
-                    "image": "/assets/imgs/subCategories/tools.jpg",
+                    "image": "/store/assets/imgs/subCategories/tools.jpg",
                     "description": "Shop for beauty tools like hair straighteners, curling irons, and makeup brushes.",
                     "category": {
                         "id": "beauty",
@@ -139,7 +139,7 @@ export async function getCategories() {
                 {
                     "id": "31f30e8e-d7c3-43f7-8c57-eb00ae8b997a",
                     "name": "Wellness",
-                    "image": "/assets/imgs/subCategories/wellness.jpg",
+                    "image": "/store/assets/imgs/subCategories/wellness.jpg",
                     "description": "Shop for wellness productids like vitamins, supplements, and essential oils.",
                     "category": {
                         "id": "beauty",
@@ -149,7 +149,7 @@ export async function getCategories() {
                 {
                     "id": "54e5097e-6dcb-46fc-963d-24cc8a8372b1",
                     "name": "Skincare",
-                    "image": "/assets/imgs/subCategories/skin.jpg",
+                    "image": "/store/assets/imgs/subCategories/skin.jpg",
                     "description": "Get skincare productids like cleansers, moisturizers, and serums to keep your skin healthy and glowing.",
                     "category": {
                         "id": "beauty",
@@ -159,7 +159,7 @@ export async function getCategories() {
                 {
                     "id": "67447359-bb55-4510-a696-06207f11625b",
                     "name": "Men's Grooming",
-                    "image": "/assets/imgs/subCategories/mensgroom.jpg",
+                    "image": "/store/assets/imgs/subCategories/mensgroom.jpg",
                     "description": "Find grooming productids for men like razors, shaving cream, and aftershave.",
                     "category": {
                         "id": "beauty",
@@ -169,7 +169,7 @@ export async function getCategories() {
                 {
                     "id": "8d12a370-ad82-4c33-a99a-006b040abbe2",
                     "name": "Fragrances",
-                    "image": "/assets/imgs/subCategories/fragrance.jpg",
+                    "image": "/store/assets/imgs/subCategories/fragrance.jpg",
                     "description": "Find perfumes and colognes from top brands for men and women.",
                     "category": {
                         "id": "beauty",
@@ -179,7 +179,7 @@ export async function getCategories() {
                 {
                     "id": "b4294426-52a9-4ec8-9e9f-2efe6fe14489",
                     "name": "Personal Care",
-                    "image": "/assets/imgs/subCategories/personal.jpg",
+                    "image": "/store/assets/imgs/subCategories/personal.jpg",
                     "description": "Get personal care productids like toothpaste, deodorant, and body powder.",
                     "category": {
                         "id": "beauty",
@@ -189,7 +189,7 @@ export async function getCategories() {
                 {
                     "id": "bf567f6d-aac6-4b7e-8abb-a3f830378df3",
                     "name": "Makeup",
-                    "image": "/assets/imgs/subCategories/makeup.jpg",
+                    "image": "/store/assets/imgs/subCategories/makeup.jpg",
                     "description": "Find makeup productids like foundation, lipstick, and mascara for any occasion.",
                     "category": {
                         "id": "beauty",
@@ -199,7 +199,7 @@ export async function getCategories() {
                 {
                     "id": "c8e24060-a3cc-4909-a295-a20490698732",
                     "name": "Bath & Body",
-                    "image": "/assets/imgs/subCategories/bath.jpg",
+                    "image": "/store/assets/imgs/subCategories/bath.jpg",
                     "description": "Get bath and body productids like soaps, body wash, and lotions for a relaxing spa experience at home.",
                     "category": {
                         "id": "beauty",
@@ -209,7 +209,7 @@ export async function getCategories() {
                 {
                     "id": "f01b6cc6-1917-40ff-9344-184e978a68d8",
                     "name": "Hair Care",
-                    "image": "/assets/imgs/subCategories/hair.jpg",
+                    "image": "/store/assets/imgs/subCategories/hair.jpg",
                     "description": "Shop for hair care productids like shampoo, conditioner, and styling tools for any hair type.",
                     "category": {
                         "id": "beauty",
@@ -221,13 +221,13 @@ export async function getCategories() {
         {
             "id": "homeandgarden",
             "name": "Home & Garden",
-            "image": "/assets/imgs/categories/home.jpg",
-            "icon": "/assets/imgs/categories/homesmall.jpg",
+            "image": "/store/assets/imgs/categories/home.jpg",
+            "icon": "/store/assets/imgs/categories/homesmall.jpg",
             "subcategories": [
                 {
                     "id": "0fc1779f-8256-402b-bfce-aa7938a7dce0",
                     "name": "Cleaning & Laundry",
-                    "image": "/assets/imgs/subCategories/homebath.jpg",
+                    "image": "/store/assets/imgs/subCategories/homebath.jpg",
                     "description": "Get cleaning supplies and laundry essentials for your home.",
                     "category": {
                         "id": "homeandgarden",
@@ -237,7 +237,7 @@ export async function getCategories() {
                 {
                     "id": "19c1e093-d6a4-4af9-ad6d-3b5111a034d6",
                     "name": "Bedding & Bath",
-                    "image": "/assets/imgs/subCategories/beds.jpg",
+                    "image": "/store/assets/imgs/subCategories/beds.jpg",
                     "description": "Shop for bedding sets, towels, and other bath essentials for your home.",
                     "category": {
                         "id": "homeandgarden",
@@ -247,7 +247,7 @@ export async function getCategories() {
                 {
                     "id": "21010f6a-2891-4fc9-969f-4886c993e95c",
                     "name": "Kitchen & Dining",
-                    "image": "/assets/imgs/subCategories/kitchen.jpg",
+                    "image": "/store/assets/imgs/subCategories/kitchen.jpg",
                     "description": "Find kitchen appliances, cookware, and dining essentials for your home.",
                     "category": {
                         "id": "homeandgarden",
@@ -257,7 +257,7 @@ export async function getCategories() {
                 {
                     "id": "7cf5b026-3725-4149-8602-1a0f65da4bd0",
                     "name": "Storage & Organization",
-                    "image": "/assets/imgs/subCategories/homestorage.jpg",
+                    "image": "/store/assets/imgs/subCategories/homestorage.jpg",
                     "description": "Find storage solutions and organizational tools for your home or office.",
                     "category": {
                         "id": "homeandgarden",
@@ -267,7 +267,7 @@ export async function getCategories() {
                 {
                     "id": "7d214c1c-09ac-4645-b389-16e146c4e9d2",
                     "name": "Lighting",
-                    "image": "/assets/imgs/subCategories/lights.jpg",
+                    "image": "/store/assets/imgs/subCategories/lights.jpg",
                     "description": "Discover lighting solutions for your home, including lamps, light fixtures, and bulbs.",
                     "category": {
                         "id": "homeandgarden",
@@ -277,7 +277,7 @@ export async function getCategories() {
                 {
                     "id": "84dd11a8-db4d-4302-aca9-fbeb00ddaf9b",
                     "name": "Pet Supplies",
-                    "image": "/assets/imgs/subCategories/pets.jpg",
+                    "image": "/store/assets/imgs/subCategories/pets.jpg",
                     "description": "Find pet food, toys, and other supplies for your furry friends.",
                     "category": {
                         "id": "homeandgarden",
@@ -287,7 +287,7 @@ export async function getCategories() {
                 {
                     "id": "86f9eabb-c453-4c95-bef2-e7538df76294",
                     "name": "Home Decor",
-                    "image": "/assets/imgs/subCategories/decor.jpg",
+                    "image": "/store/assets/imgs/subCategories/decor.jpg",
                     "description": "Shop for home decor items like curtains, rugs, wall art, and more.",
                     "category": {
                         "id": "homeandgarden",
@@ -297,7 +297,7 @@ export async function getCategories() {
                 {
                     "id": "8c9ac156-d7ef-46a5-b4da-0983fdc00f1a",
                     "name": "Furniture",
-                    "image": "/assets/imgs/subCategories/furniture.jpg",
+                    "image": "/store/assets/imgs/subCategories/furniture.jpg",
                     "description": "Shop for sofas, chairs, tables, and other furniture pieces for your home or office.",
                     "category": {
                         "id": "homeandgarden",
@@ -307,7 +307,7 @@ export async function getCategories() {
                 {
                     "id": "a1a8c3ea-7e6a-419c-aae3-75b17a577752",
                     "name": "Home Improvement",
-                    "image": "/assets/imgs/subCategories/hometools.jpg",
+                    "image": "/store/assets/imgs/subCategories/hometools.jpg",
                     "description": "Get tools and supplies for home improvement projects like painting, plumbing, and electrical work.",
                     "category": {
                         "id": "homeandgarden",
@@ -317,7 +317,7 @@ export async function getCategories() {
                 {
                     "id": "c5f4fad6-1726-4b2b-a449-fcbd1002023c",
                     "name": "Gardening",
-                    "image": "/assets/imgs/subCategories/garden.jpg",
+                    "image": "/store/assets/imgs/subCategories/garden.jpg",
                     "description": "Discover gardening tools, plants, and other essentials for your garden.",
                     "category": {
                         "id": "homeandgarden",
@@ -329,13 +329,13 @@ export async function getCategories() {
         {
             "id": "menswear",
             "name": "Men's Clothing",
-            "image": "/assets/imgs/categories/mensWear.jpg",
-            "icon": "/assets/imgs/categories/mens-Wearsmall.jpg",
+            "image": "/store/assets/imgs/categories/mensWear.jpg",
+            "icon": "/store/assets/imgs/categories/mens-Wearsmall.jpg",
             "subcategories": [
                 {
                     "id": "24b62ef4-3d30-4f01-b621-1a849edc5f5e",
                     "name": "Sweaters",
-                    "image": "/assets/imgs/subCategories/sweater.jpg",
+                    "image": "/store/assets/imgs/subCategories/sweater.jpg",
                     "description": "Warm and comfortable tops that come in a variety of styles, including pullovers, cardigans, and turtlenecks.",
                     "category": {
                         "id": "menswear",
@@ -345,7 +345,7 @@ export async function getCategories() {
                 {
                     "id": "2ec55d9f-c9dd-49c8-af86-10b7fd4f7dd3",
                     "name": "Suits",
-                    "image": "/assets/imgs/subCategories/suit.jpg",
+                    "image": "/store/assets/imgs/subCategories/suit.jpg",
                     "description": "Formal outfits that typically consist of a jacket and matching pants, worn for business or formal occasions.",
                     "category": {
                         "id": "menswear",
@@ -355,7 +355,7 @@ export async function getCategories() {
                 {
                     "id": "95448f8a-49ea-4930-b91f-193892a687e8",
                     "name": "T-Shirts",
-                    "image": "/assets/imgs/subCategories/shirt.jpg",
+                    "image": "/store/assets/imgs/subCategories/shirt.jpg",
                     "description": "Comfortable and versatile tops that come in a variety of styles, colors, and designs.",
                     "category": {
                         "id": "menswear",
@@ -365,7 +365,7 @@ export async function getCategories() {
                 {
                     "id": "af8cd7b9-683a-48d9-8be4-25eb2237ee39",
                     "name": "Hoodies",
-                    "image": "/assets/imgs/subCategories/hoodie.jpg",
+                    "image": "/store/assets/imgs/subCategories/hoodie.jpg",
                     "description": "Casual and comfortable tops that come with a hood and often feature a front pocket.",
                     "category": {
                         "id": "menswear",
@@ -375,7 +375,7 @@ export async function getCategories() {
                 {
                     "id": "c05c19eb-f67b-48f3-b4ca-922326df53ff",
                     "name": "Foot Wear",
-                    "image": "/assets/imgs/subCategories/foot.jpg",
+                    "image": "/store/assets/imgs/subCategories/foot.jpg",
                     "description": "Boots, jordans, sketchers adidas, nike and everyhing inbetween.",
                     "category": {
                         "id": "menswear",
@@ -385,7 +385,7 @@ export async function getCategories() {
                 {
                     "id": "c886c2eb-fc04-4d2a-8c9e-1cb71bbac941",
                     "name": "Dress Shirts",
-                    "image": "/assets/imgs/subCategories/dressshirt.jpg",
+                    "image": "/store/assets/imgs/subCategories/dressshirt.jpg",
                     "description": "Formal shirts that are typically worn with suits or dress pants for business or formal occasions.",
                     "category": {
                         "id": "menswear",
@@ -395,7 +395,7 @@ export async function getCategories() {
                 {
                     "id": "e1adeac0-4152-4a32-a789-ca9a2c99921b",
                     "name": "Head wear",
-                    "image": "/assets/imgs/subCategories/cap.jpg",
+                    "image": "/store/assets/imgs/subCategories/cap.jpg",
                     "description": "Head wear, all kinds of hats. Stay protected in the summer and warm in the winter!",
                     "category": {
                         "id": "menswear",
@@ -405,7 +405,7 @@ export async function getCategories() {
                 {
                     "id": "e72f789f-3032-43b1-bb90-1faacbaa6c9c",
                     "name": "Jeans",
-                    "image": "/assets/imgs/subCategories/jeans.jpg",
+                    "image": "/store/assets/imgs/subCategories/jeans.jpg",
                     "description": "Casual and versatile pants that come in a variety of styles, cuts, and washes.",
                     "category": {
                         "id": "menswear",
@@ -415,7 +415,7 @@ export async function getCategories() {
                 {
                     "id": "eac02249-e78d-4f89-b949-7b2bacdbfd2a",
                     "name": "Jackets",
-                    "image": "/assets/imgs/subCategories/jacket.jpg",
+                    "image": "/store/assets/imgs/subCategories/jacket.jpg",
                     "description": "Outerwear that provides warmth and protection from the elements, including leather jackets, denim jackets, and bomber jackets.",
                     "category": {
                         "id": "menswear",
@@ -425,7 +425,7 @@ export async function getCategories() {
                 {
                     "id": "fc160538-ed47-4b02-8ff9-32addec8b3a6",
                     "name": "Pants",
-                    "image": "/assets/imgs/subCategories/pants.jpg",
+                    "image": "/store/assets/imgs/subCategories/pants.jpg",
                     "description": "Versatile pants that come in a variety of styles, including khakis, chinos, and cargo pants.",
                     "category": {
                         "id": "menswear",
@@ -437,13 +437,13 @@ export async function getCategories() {
         {
             "id": "sports",
             "name": "Sports",
-            "image": "/assets/imgs/categories/sports.jpg",
-            "icon": "/assets/imgs/categories/sportssmall.jpg",
+            "image": "/store/assets/imgs/categories/sports.jpg",
+            "icon": "/store/assets/imgs/categories/sportssmall.jpg",
             "subcategories": [
                 {
                     "id": "24ffe98a-3970-4226-9895-bc0267f73cef",
                     "name": "Outdoor Recreation",
-                    "image": "/assets/imgs/subCategories/camping.jpg",
+                    "image": "/store/assets/imgs/subCategories/camping.jpg",
                     "description": "Find outdoor gear like camping equipment, backpacks, and hiking boots.",
                     "category": {
                         "id": "sports",
@@ -453,7 +453,7 @@ export async function getCategories() {
                 {
                     "id": "2fcef4d6-0f0a-490b-9b12-57ad0eb0bc9a",
                     "name": "Team Sports",
-                    "image": "/assets/imgs/subCategories/teams.jpg",
+                    "image": "/store/assets/imgs/subCategories/teams.jpg",
                     "description": "Get gear for team sports like basketball, soccer, and football.",
                     "category": {
                         "id": "sports",
@@ -463,7 +463,7 @@ export async function getCategories() {
                 {
                     "id": "413916b7-99d7-4d46-bd9b-86169ca97373",
                     "name": "Golf",
-                    "image": "/assets/imgs/subCategories/golf.jpg",
+                    "image": "/store/assets/imgs/subCategories/golf.jpg",
                     "description": "Find golf clubs, bags, and accessories for your next round.",
                     "category": {
                         "id": "sports",
@@ -473,7 +473,7 @@ export async function getCategories() {
                 {
                     "id": "7407db30-6510-4b5e-8e1e-0e8e72e78f2f",
                     "name": "Bikes",
-                    "image": "/assets/imgs/subCategories/bicycle.jpg",
+                    "image": "/store/assets/imgs/subCategories/bicycle.jpg",
                     "description": "Find bikes for adults and kids, including road bikes, mountain bikes, and BMX bikes.",
                     "category": {
                         "id": "sports",
@@ -483,7 +483,7 @@ export async function getCategories() {
                 {
                     "id": "8cec5cb9-b7ac-480d-9c60-899307478643",
                     "name": "Fitness Equipment",
-                    "image": "/assets/imgs/subCategories/gym.jpg",
+                    "image": "/store/assets/imgs/subCategories/gym.jpg",
                     "description": "Shop for fitness equipment like treadmills, weights, and resistance machines.",
                     "category": {
                         "id": "sports",
@@ -493,7 +493,7 @@ export async function getCategories() {
                 {
                     "id": "a201ef9c-3206-4449-8eab-86ed6e2220a9",
                     "name": "Athletic Accessories",
-                    "image": "/assets/imgs/subCategories/accesories.jpg",
+                    "image": "/store/assets/imgs/subCategories/accesories.jpg",
                     "description": "Find athletic accessories like water bottles, yoga mats, and resistance bands.",
                     "category": {
                         "id": "sports",
@@ -503,7 +503,7 @@ export async function getCategories() {
                 {
                     "id": "b29fd5c9-ea24-4d83-bf97-fc355f8c672c",
                     "name": "Scooters",
-                    "image": "/assets/imgs/subCategories/scooter.jpg",
+                    "image": "/store/assets/imgs/subCategories/scooter.jpg",
                     "description": "Get electric and manual scooters for kids and adults.",
                     "category": {
                         "id": "sports",
@@ -513,7 +513,7 @@ export async function getCategories() {
                 {
                     "id": "bdfb4f4e-c9ae-4590-a62b-f491e4aea479",
                     "name": "Athletic Apparel",
-                    "image": "/assets/imgs/subCategories/apparel.jpg",
+                    "image": "/store/assets/imgs/subCategories/apparel.jpg",
                     "description": "Shop for athletic apparel like workout clothes, running shoes, and more.",
                     "category": {
                         "id": "sports",
@@ -523,7 +523,7 @@ export async function getCategories() {
                 {
                     "id": "d3022cd3-e081-41f5-a7a9-06375898811e",
                     "name": "Water Sports",
-                    "image": "/assets/imgs/subCategories/water.jpg",
+                    "image": "/store/assets/imgs/subCategories/water.jpg",
                     "description": "Shop for water sports gear like paddleboards, kayaks, and snorkeling equipment.",
                     "category": {
                         "id": "sports",
@@ -533,7 +533,7 @@ export async function getCategories() {
                 {
                     "id": "d9c023b9-ead8-4a2c-8acb-68ee100831d3",
                     "name": "Winter Sports",
-                    "image": "/assets/imgs/subCategories/winter.jpg",
+                    "image": "/store/assets/imgs/subCategories/winter.jpg",
                     "description": "Get gear for winter sports like skiing, snowboarding, and ice skating.",
                     "category": {
                         "id": "sports",
@@ -545,13 +545,13 @@ export async function getCategories() {
         {
             "id": "technology",
             "name": "Technology",
-            "image": "/assets/imgs/categories/technology.jpg",
-            "icon": "/assets/imgs/categories/technologysmall.jpg",
+            "image": "/store/assets/imgs/categories/technology.jpg",
+            "icon": "/store/assets/imgs/categories/technologysmall.jpg",
             "subcategories": [
                 {
                     "id": "0bd71a9c-6fe9-4bff-897c-4e96ee59974e",
                     "name": "Personal Computers",
-                    "image": "/assets/imgs/subCategories/pc.jpg",
+                    "image": "/store/assets/imgs/subCategories/pc.jpg",
                     "description": "Get PCs, the latest components, PC accesories and everything else related to PCs.",
                     "category": {
                         "id": "technology",
@@ -561,7 +561,7 @@ export async function getCategories() {
                 {
                     "id": "1ba269cb-5d2b-4975-be75-0979930cb10e",
                     "name": "Wearable Technology",
-                    "image": "/assets/imgs/subCategories/watches.jpg",
+                    "image": "/store/assets/imgs/subCategories/watches.jpg",
                     "description": "Explore the latest wearable tech devices like smartwatches, fitness trackers, and more.",
                     "category": {
                         "id": "technology",
@@ -571,7 +571,7 @@ export async function getCategories() {
                 {
                     "id": "3edffd71-09a8-4fdb-a59e-add7c7ceb538",
                     "name": "Office Electronics",
-                    "image": "/assets/imgs/subCategories/printer.jpg",
+                    "image": "/store/assets/imgs/subCategories/printer.jpg",
                     "description": "Get office electronics like printers, scanners, and projectors to help you run your business.",
                     "category": {
                         "id": "technology",
@@ -581,7 +581,7 @@ export async function getCategories() {
                 {
                     "id": "50292d51-a80b-40e0-ab12-47e7557cedb8",
                     "name": "Cameras & Photography",
-                    "image": "/assets/imgs/subCategories/proffcamera.jpg",
+                    "image": "/store/assets/imgs/subCategories/proffcamera.jpg",
                     "description": "Shop for cameras, lenses, and other photography equipment for amateurs and professionals.",
                     "category": {
                         "id": "technology",
@@ -591,7 +591,7 @@ export async function getCategories() {
                 {
                     "id": "57dcef31-e8c0-429f-8dea-0089afcbf945",
                     "name": "HandHeld entertainment",
-                    "image": "/assets/imgs/subCategories/handheld.jpg",
+                    "image": "/store/assets/imgs/subCategories/handheld.jpg",
                     "description": "Tablets, and other stuff.",
                     "category": {
                         "id": "technology",
@@ -601,7 +601,7 @@ export async function getCategories() {
                 {
                     "id": "58b31959-1232-453f-b631-6411be333ed3",
                     "name": "Virtual Reality",
-                    "image": "/assets/imgs/subCategories/vr.jpg",
+                    "image": "/store/assets/imgs/subCategories/vr.jpg",
                     "description": "Explore virtual reality technology and accessories to enhance your gaming and entertainment experiences.",
                     "category": {
                         "id": "technology",
@@ -611,7 +611,7 @@ export async function getCategories() {
                 {
                     "id": "60c7be7d-55fe-4bff-8b8a-bd8c1c22f15a",
                     "name": "Accessories & Parts",
-                    "image": "/assets/imgs/subCategories/chargers.jpg",
+                    "image": "/store/assets/imgs/subCategories/chargers.jpg",
                     "description": "Find accessories and replacement parts for your electronics, including chargers, cables, and batteries.",
                     "category": {
                         "id": "technology",
@@ -621,7 +621,7 @@ export async function getCategories() {
                 {
                     "id": "8f50d06c-cf95-442e-bebe-8a9e1311b9e5",
                     "name": "Audio & Video Equipment",
-                    "image": "/assets/imgs/subCategories/audiovideo.jpg",
+                    "image": "/store/assets/imgs/subCategories/audiovideo.jpg",
                     "description": "Shop for speakers, headphones, TVs, projectors, and other audio & video equipment.",
                     "category": {
                         "id": "technology",
@@ -631,7 +631,7 @@ export async function getCategories() {
                 {
                     "id": "cfc36e75-7f0b-4c4d-a4d9-a2d25f81b467",
                     "name": "Smartphones",
-                    "image": "/assets/imgs/subCategories/phone.jpg",
+                    "image": "/store/assets/imgs/subCategories/phone.jpg",
                     "description": "Discover the latest smartphones from top brands like Apple, Samsung, and more.",
                     "category": {
                         "id": "technology",
@@ -641,7 +641,7 @@ export async function getCategories() {
                 {
                     "id": "edb2e61a-ca1e-413d-a3a1-4bac24da99bf",
                     "name": "Gaming Consoles & Accessories",
-                    "image": "/assets/imgs/subCategories/consoles.jpg",
+                    "image": "/store/assets/imgs/subCategories/consoles.jpg",
                     "description": "Find the latest gaming consoles and accessories from top brands like Playstation, Xbox, and Nintendo.",
                     "category": {
                         "id": "technology",
@@ -653,13 +653,13 @@ export async function getCategories() {
         {
             "id": "womenswear",
             "name": "Women's Clothing",
-            "image": "/assets/imgs/categories/womens-Wear.jpg",
-            "icon": "/assets/imgs/categories/womens-Wearsmall.jpg",
+            "image": "/store/assets/imgs/categories/womens-Wear.jpg",
+            "icon": "/store/assets/imgs/categories/womens-Wearsmall.jpg",
             "subcategories": [
                 {
                     "id": "28bbdaaa-7997-4cf5-9336-0da1b3fc8026",
                     "name": "Carry-ons",
-                    "image": "/assets/imgs/subCategories/purse.jpg",
+                    "image": "/store/assets/imgs/subCategories/purse.jpg",
                     "description": "All the purses you can think of at great prices.",
                     "category": {
                         "id": "womenswear",
@@ -669,7 +669,7 @@ export async function getCategories() {
                 {
                     "id": "2986c60e-1876-4c73-84be-95855807a23e",
                     "name": "Foot wear",
-                    "image": "/assets/imgs/subCategories/boots.jpg",
+                    "image": "/store/assets/imgs/subCategories/boots.jpg",
                     "description": "Every kind of shoe you can think of at great prices.",
                     "category": {
                         "id": "womenswear",
@@ -679,7 +679,7 @@ export async function getCategories() {
                 {
                     "id": "4c9db19d-87b1-4380-846c-62547aeeb2de",
                     "name": "Tops",
-                    "image": "/assets/imgs/subCategories/tops.jpg",
+                    "image": "/store/assets/imgs/subCategories/tops.jpg",
                     "description": "A range of styles, from casual to formal, including t-shirts, blouses, and crop tops.",
                     "category": {
                         "id": "womenswear",
@@ -689,7 +689,7 @@ export async function getCategories() {
                 {
                     "id": "56feed6d-93a3-4ff1-a28b-bba8337a2ade",
                     "name": "Jeans",
-                    "image": "/assets/imgs/subCategories/fjeans.jpg",
+                    "image": "/store/assets/imgs/subCategories/fjeans.jpg",
                     "description": "A range of styles, including jeans, leggings, and dress pants, suitable for various occasions and seasons.",
                     "category": {
                         "id": "womenswear",
@@ -699,7 +699,7 @@ export async function getCategories() {
                 {
                     "id": "68fda0af-4632-4bf5-94bc-cb18f8aef5f9",
                     "name": "Sweaters",
-                    "image": "/assets/imgs/subCategories/fsweater.jpg",
+                    "image": "/store/assets/imgs/subCategories/fsweater.jpg",
                     "description": "Warm and comfortable tops that come in a variety of styles, including pullovers, cardigans, and turtlenecks.",
                     "category": {
                         "id": "womenswear",
@@ -709,7 +709,7 @@ export async function getCategories() {
                 {
                     "id": "8f1d8954-e266-49a4-a7a5-2ac1f8620aeb",
                     "name": "Professional Chic",
-                    "image": "/assets/imgs/subCategories/work.jpg",
+                    "image": "/store/assets/imgs/subCategories/work.jpg",
                     "description": "Dress to impress in the office with a selection of tailored suits and work-appropriate attire.",
                     "category": {
                         "id": "womenswear",
@@ -719,7 +719,7 @@ export async function getCategories() {
                 {
                     "id": "a2bb30f6-be86-4e1c-b58f-e1599b8e30c3",
                     "name": "Dresses",
-                    "image": "/assets/imgs/subCategories/dress.jpg",
+                    "image": "/store/assets/imgs/subCategories/dress.jpg",
                     "description": "All kinds of dresses and in all the colors they come in. We even have wedding dresses!",
                     "category": {
                         "id": "womenswear",
@@ -729,7 +729,7 @@ export async function getCategories() {
                 {
                     "id": "a39cf50b-b311-468e-8e43-eefb0ef53fe2",
                     "name": "Skirts",
-                    "image": "/assets/imgs/subCategories/skirt.jpg",
+                    "image": "/store/assets/imgs/subCategories/skirt.jpg",
                     "description": "A classic wardrobe staple that comes in a variety of lengths, styles, and materials, including pencil skirts, midi skirts, and maxi skirts.",
                     "category": {
                         "id": "womenswear",
@@ -739,7 +739,7 @@ export async function getCategories() {
                 {
                     "id": "e666d9e6-3f05-410e-b93d-457a71cf0123",
                     "name": "Activewear",
-                    "image": "/assets/imgs/subCategories/active.jpg",
+                    "image": "/store/assets/imgs/subCategories/active.jpg",
                     "description": "Comfortable and functional clothing designed for athletic and sports activities, including yoga pants, sports bras, and workout shirts.",
                     "category": {
                         "id": "womenswear",
@@ -749,7 +749,7 @@ export async function getCategories() {
                 {
                     "id": "f641cfb0-5506-46ee-bb60-0c8150df3585",
                     "name": "Jackets",
-                    "image": "/assets/imgs/subCategories/jackets.jpg",
+                    "image": "/store/assets/imgs/subCategories/jackets.jpg",
                     "description": "Outerwear that provides warmth and protection from the elements, including leather jackets, denim jackets, and blazers.",
                     "category": {
                         "id": "womenswear",
@@ -765,8 +765,8 @@ export async function getCategoryByID(ID) {
     return {
         "id": "technology",
         "name": "Technology",
-        "image": "/assets/imgs/categories/technology.jpg",
-        "icon": "/assets/imgs/categories/technologysmall.jpg",
+        "image": "/store/assets/imgs/categories/technology.jpg",
+        "icon": "/store/assets/imgs/categories/technologysmall.jpg",
         "subcategories": [
             {
                 "products": [
@@ -777,7 +777,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -826,7 +826,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -879,7 +879,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -950,7 +950,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -1007,7 +1007,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1052,7 +1052,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "0bd71a9c-6fe9-4bff-897c-4e96ee59974e",
                 "name": "Personal Computers",
-                "image": "/assets/imgs/subCategories/pc.jpg",
+                "image": "/store/assets/imgs/subCategories/pc.jpg",
                 "description": "Get PCs, the latest components, PC accesories and everything else related to PCs.",
                 "category": {
                     "id": "technology",
@@ -1068,7 +1068,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1094,7 +1094,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "technokia",
                             "name": "Nokia",
-                            "image": "/assets/imgs/manufacturers/nokia.jpg"
+                            "image": "/store/assets/imgs/manufacturers/nokia.jpg"
                         },
                         "productSizes": [
                             {
@@ -1120,7 +1120,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "technokia",
                             "name": "Nokia",
-                            "image": "/assets/imgs/manufacturers/nokia.jpg"
+                            "image": "/store/assets/imgs/manufacturers/nokia.jpg"
                         },
                         "productSizes": [
                             {
@@ -1170,7 +1170,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1220,7 +1220,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -1248,7 +1248,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "1ba269cb-5d2b-4975-be75-0979930cb10e",
                 "name": "Wearable Technology",
-                "image": "/assets/imgs/subCategories/watches.jpg",
+                "image": "/store/assets/imgs/subCategories/watches.jpg",
                 "description": "Explore the latest wearable tech devices like smartwatches, fitness trackers, and more.",
                 "category": {
                     "id": "technology",
@@ -1264,7 +1264,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1296,7 +1296,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -1322,7 +1322,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1360,7 +1360,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1386,7 +1386,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -1414,7 +1414,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "3edffd71-09a8-4fdb-a59e-add7c7ceb538",
                 "name": "Office Electronics",
-                "image": "/assets/imgs/subCategories/printer.jpg",
+                "image": "/store/assets/imgs/subCategories/printer.jpg",
                 "description": "Get office electronics like printers, scanners, and projectors to help you run your business.",
                 "category": {
                     "id": "technology",
@@ -1430,7 +1430,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -1456,7 +1456,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -1506,7 +1506,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1544,7 +1544,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "technokia",
                             "name": "Nokia",
-                            "image": "/assets/imgs/manufacturers/nokia.jpg"
+                            "image": "/store/assets/imgs/manufacturers/nokia.jpg"
                         },
                         "productSizes": [
                             {
@@ -1582,7 +1582,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -1604,7 +1604,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "50292d51-a80b-40e0-ab12-47e7557cedb8",
                 "name": "Cameras & Photography",
-                "image": "/assets/imgs/subCategories/proffcamera.jpg",
+                "image": "/store/assets/imgs/subCategories/proffcamera.jpg",
                 "description": "Shop for cameras, lenses, and other photography equipment for amateurs and professionals.",
                 "category": {
                     "id": "technology",
@@ -1620,7 +1620,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -1670,7 +1670,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1714,7 +1714,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1746,7 +1746,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1772,7 +1772,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1818,7 +1818,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "57dcef31-e8c0-429f-8dea-0089afcbf945",
                 "name": "HandHeld entertainment",
-                "image": "/assets/imgs/subCategories/handheld.jpg",
+                "image": "/store/assets/imgs/subCategories/handheld.jpg",
                 "description": "Tablets, and other stuff.",
                 "category": {
                     "id": "technology",
@@ -1834,7 +1834,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1866,7 +1866,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "technokia",
                             "name": "Nokia",
-                            "image": "/assets/imgs/manufacturers/nokia.jpg"
+                            "image": "/store/assets/imgs/manufacturers/nokia.jpg"
                         },
                         "productSizes": [
                             {
@@ -1910,7 +1910,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -1942,7 +1942,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -1986,7 +1986,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2020,7 +2020,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "58b31959-1232-453f-b631-6411be333ed3",
                 "name": "Virtual Reality",
-                "image": "/assets/imgs/subCategories/vr.jpg",
+                "image": "/store/assets/imgs/subCategories/vr.jpg",
                 "description": "Explore virtual reality technology and accessories to enhance your gaming and entertainment experiences.",
                 "category": {
                     "id": "technology",
@@ -2036,7 +2036,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -2068,7 +2068,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2094,7 +2094,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -2155,7 +2155,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -2181,7 +2181,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "technokia",
                             "name": "Nokia",
-                            "image": "/assets/imgs/manufacturers/nokia.jpg"
+                            "image": "/store/assets/imgs/manufacturers/nokia.jpg"
                         },
                         "productSizes": [
                             {
@@ -2215,7 +2215,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "60c7be7d-55fe-4bff-8b8a-bd8c1c22f15a",
                 "name": "Accessories & Parts",
-                "image": "/assets/imgs/subCategories/chargers.jpg",
+                "image": "/store/assets/imgs/subCategories/chargers.jpg",
                 "description": "Find accessories and replacement parts for your electronics, including chargers, cables, and batteries.",
                 "category": {
                     "id": "technology",
@@ -2231,7 +2231,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -2269,7 +2269,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -2313,7 +2313,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2339,7 +2339,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -2365,7 +2365,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -2387,7 +2387,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "8f50d06c-cf95-442e-bebe-8a9e1311b9e5",
                 "name": "Audio & Video Equipment",
-                "image": "/assets/imgs/subCategories/audiovideo.jpg",
+                "image": "/store/assets/imgs/subCategories/audiovideo.jpg",
                 "description": "Shop for speakers, headphones, TVs, projectors, and other audio & video equipment.",
                 "category": {
                     "id": "technology",
@@ -2403,7 +2403,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -2452,7 +2452,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techapple",
                             "name": "Apple",
-                            "image": "/assets/imgs/manufacturers/apple.jpg"
+                            "image": "/store/assets/imgs/manufacturers/apple.jpg"
                         },
                         "productSizes": [
                             {
@@ -2499,7 +2499,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -2552,7 +2552,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2607,7 +2607,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -2660,7 +2660,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2697,7 +2697,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -2756,7 +2756,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techlg",
                             "name": "LG",
-                            "image": "/assets/imgs/manufacturers/lg.jpg"
+                            "image": "/store/assets/imgs/manufacturers/lg.jpg"
                         },
                         "productSizes": [
                             {
@@ -2799,7 +2799,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -2842,7 +2842,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -2881,7 +2881,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "cfc36e75-7f0b-4c4d-a4d9-a2d25f81b467",
                 "name": "Smartphones",
-                "image": "/assets/imgs/subCategories/phone.jpg",
+                "image": "/store/assets/imgs/subCategories/phone.jpg",
                 "description": "Discover the latest smartphones from top brands like Apple, Samsung, and more.",
                 "category": {
                     "id": "technology",
@@ -2897,7 +2897,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -2947,7 +2947,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsamsung",
                             "name": "Samsung",
-                            "image": "/assets/imgs/manufacturers/samsung.jpg"
+                            "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                         },
                         "productSizes": [
                             {
@@ -2979,7 +2979,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -3029,7 +3029,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techxiaomi",
                             "name": "Xiaomi",
-                            "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                            "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                         },
                         "productSizes": [
                             {
@@ -3067,7 +3067,7 @@ export async function getCategoryByID(ID) {
                         "manufacturer": {
                             "id": "techsony",
                             "name": "Sony",
-                            "image": "/assets/imgs/manufacturers/sony.jpg"
+                            "image": "/store/assets/imgs/manufacturers/sony.jpg"
                         },
                         "productSizes": [
                             {
@@ -3101,7 +3101,7 @@ export async function getCategoryByID(ID) {
                 ],
                 "id": "edb2e61a-ca1e-413d-a3a1-4bac24da99bf",
                 "name": "Gaming Consoles & Accessories",
-                "image": "/assets/imgs/subCategories/consoles.jpg",
+                "image": "/store/assets/imgs/subCategories/consoles.jpg",
                 "description": "Find the latest gaming consoles and accessories from top brands like Playstation, Xbox, and Nintendo.",
                 "category": {
                     "id": "technology",

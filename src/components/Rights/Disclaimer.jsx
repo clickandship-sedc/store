@@ -11,8 +11,8 @@ function Disclaimer() {
           <p>Last updated: 10.19.2023</p>
           <p>
             The information provided by Click & Ship ("we," "us," or "our") on{" "}
-            <Link to="http://localhost:3000/" className="link-style">
-              http://localhost:3000
+            <Link to="https://clickandship-sedc.github.io/store/" className="link-style">
+              https://clickandship-sedc.github.io/store/
             </Link>{" "}
             is for general informational purposes only. All information on the
             website is provided in good faith, however, we make no

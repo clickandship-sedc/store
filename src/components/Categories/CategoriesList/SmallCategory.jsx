@@ -5,11 +5,11 @@ import ImageLoader from "../../ImageLoader/ImageLoader"
 export function SmallCategory(props) {
     return (
         <li>
-            <NavLink to={`/subcategory/${props.subcategory.id}`}>
+            <NavLink to={`store/subcategory/${props.subcategory.id}`}>
                 <ImageLoader
                     url={props.subcategory.image}
                     alt={props.subcategory.name}
-                    backupUrl="/assets/imgs/404/category404.png"
+                    backupUrl="store/assets/imgs/404/category404.png"
                     backupAlt={props.subcategory.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -24,11 +24,11 @@ export function SmallCategory(props) {
 export function BiggerCategory(props) {
     return (
         <li>
-            <NavLink to={`/category/${props.category.id}`}>
+            <NavLink to={`store/category/${props.category.id}`}>
                 <ImageLoader
                     url={props.category.image}
                     alt={props.category.name}
-                    backupUrl="/assets/imgs/404/category404.png"
+                    backupUrl="store/assets/imgs/404/category404.png"
                     backupAlt={props.category.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -47,7 +47,7 @@ export function AdminSmallCategory(props) {
                 <ImageLoader
                     url={props.subcategory.image}
                     alt={props.subcategory.name}
-                    backupUrl="/assets/imgs/404/category404.png"
+                    backupUrl="store/assets/imgs/404/category404.png"
                     backupAlt={props.subcategory.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -66,7 +66,7 @@ export function AdminBiggerCategory(props) {
                 <ImageLoader
                     url={props.category.image}
                     alt={props.category.name}
-                    backupUrl="/assets/imgs/404/category404.png"
+                    backupUrl="store/assets/imgs/404/category404.png"
                     backupAlt={props.category.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>

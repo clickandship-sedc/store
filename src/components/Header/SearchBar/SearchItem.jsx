@@ -12,9 +12,9 @@ function SearchItem({ item, handleClick }) {
                     <ImageLoader
                         url={item.image}
                         alt={item.name}
-                        backupUrl={'/assets/imgs/404/category404.png'}
+                        backupUrl={'/store/assets/imgs/404/category404.png'}
                         backupAlt="Product"
-                        thirdBackupUrl={'/assets/imgs/404/product404.png'}
+                        thirdBackupUrl={'/store/assets/imgs/404/product404.png'}
                     ></ImageLoader>
                     <h3>{item.name}</h3>
                 </div>

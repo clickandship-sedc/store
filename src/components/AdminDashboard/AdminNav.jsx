@@ -6,19 +6,19 @@ const AdminNav = () => {
     <div className="navigation">
       <ul>
         <li>
-          <NavLink to={"/"} exact="true">Categories</NavLink>
+          <NavLink to={"store/"} exact="true">Categories</NavLink>
         </li>
         <li>
-          <NavLink to={"/sub"}>Sub-Categories</NavLink>
+          <NavLink to={"store/sub"}>Sub-Categories</NavLink>
         </li>
         <li>
-          <NavLink to={"/products"}>Products</NavLink>
+          <NavLink to={"store/products"}>Products</NavLink>
         </li>
         <li>
-          <NavLink to={"/orders"}>Orders</NavLink>
+          <NavLink to={"store/orders"}>Orders</NavLink>
         </li>
         <li>
-          <NavLink to={"/users"}>Users</NavLink>
+          <NavLink to={"store/users"}>Users</NavLink>
         </li>
       </ul>
     </div>

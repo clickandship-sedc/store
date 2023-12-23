@@ -189,7 +189,7 @@ function ProductDetails() {
     <>
       {isProdPending ? (
         <BigLoadingDiv
-          link={"/"}
+        link={"store/"}
           title={"loading product..."}
           message={"you can click here to retry if its taking too long"}
           refetch={prodRefetch}
@@ -208,7 +208,7 @@ function ProductDetails() {
               <ImageLoader
                 url={productData.image}
                 alt={productData.name}
-                backupUrl="/assets/imgs/404/product404.png"
+                backupUrl="/store/assets/imgs/404/product404.png"
                 backupAlt="Product Image 404"
               ></ImageLoader>
             </div>
@@ -217,12 +217,12 @@ function ProductDetails() {
               <div className="product-header">
                 <h2 className="product-title">
                   <span>{productData.name}</span>
-                  <NavLink to={`/manufacturer/${productData.manufacturer.id}`}>
+                  <NavLink to={`store/manufacturer/${productData.manufacturer.id}`}>
                     <p>{productData.manufacturer.name}</p>
                     <ImageLoader
                       url={productData.manufacturer.image}
                       alt={productData.manufacturer.name}
-                      backupUrl="/"
+                      backupUrl=""
                       backupAlt="Manufacturer"
                     ></ImageLoader>
                   </NavLink>
@@ -402,7 +402,7 @@ function ProductDetails() {
           <div className="block-header">
             <div>
               <h1>Related products</h1>
-              <NavLink to={subData ? `/subcategory/${subData.id}` : '/'}>
+              <NavLink to={subData ? `store/subcategory/${subData.id}` : '/'}>
                 <p>Browse All</p>
                 <svg viewBox="0 0 32 32">
                   <path
@@ -435,7 +435,7 @@ function ProductDetails() {
         </main>
       ) : isProdError ? (
         <NotFound
-          link={"/"}
+        link={"store/"}
           title={"dont have that one"}
           message={productError.message}
         ></NotFound>

@@ -51,7 +51,7 @@ function User() {
     <>
       {isUserPending ? (
         <BigLoadingDiv
-          link={"/"}
+        link={"store/"}
           title={"loading user..."}
           message={"you can click here to retry if its taking too long"}
           refetch={userRefetch}
@@ -63,7 +63,7 @@ function User() {
             <ImageLoader
               url={data.image}
               alt={data.name}
-              backupUrl="/assets/imgs/404/user404.png"
+              backupUrl="/store/assets/imgs/404/user404.png"
               backupAlt="User 404"
             ></ImageLoader>
           </div>
@@ -161,7 +161,7 @@ function User() {
         <div className="block-header">
           <div>
             <h1>User Orders</h1>
-            <NavLink to={'/cart'}>
+            <NavLink to={'store/cart'}>
               <p>View Cart</p>
               <svg viewBox="0 0 32 32">
                 <path
@@ -243,7 +243,7 @@ function User() {
         <div className="block-header">
           <div>
             <h1>User Reviews</h1>
-            <NavLink to={'/'}>
+            <NavLink to={'store/'}>
               <p>Browse Products</p>
               <svg viewBox="0 0 32 32">
                 <path
@@ -274,7 +274,7 @@ function User() {
       </main>
       ) : isUserErrro ? (
         <NotFound
-          link={"/"}
+        link={"store/"}
           title={"could't load user"}
           message={userError.message}
         ></NotFound>
@@ -303,7 +303,7 @@ export function ACUser() {
             <ImageLoader
               url={data.image}
               alt={data.name}
-              backupUrl="/assets/imgs/404/user404.png"
+              backupUrl="/store/assets/imgs/404/user404.png"
               backupAlt="User 404"
             ></ImageLoader>
           </div>

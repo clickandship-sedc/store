@@ -10,7 +10,7 @@ function TempProductCard({ product }) {
                 <ImageLoader
                     url={product.image}
                     alt={product.name}
-                    backupUrl="/assets/imgs/404/product404.png"
+                    backupUrl="/store/assets/imgs/404/product404.png"
                     backupAlt="Product Image 404"
                 ></ImageLoader>
                 <div className='infoDiv'>

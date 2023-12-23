@@ -17,7 +17,7 @@ import { searchProductApi } from "../API/searchApi"
 
 const navigateToHome = (navigate) => {
     setTimeout(() => {
-        navigate('/')
+        navigate('store/')
     }, 1000)
 }
 

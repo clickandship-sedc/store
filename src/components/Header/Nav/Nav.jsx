@@ -118,14 +118,14 @@ export default function Nav() {
     const handleSubCatClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`/subcategory/${e}`)
+            navigate(`store/subcategory/${e}`)
         }, 500)
     }
 
     const handleViewAllClick = (e) => {
         dispatch(turnOffCatDP())
         setTimeout(() => {
-            navigate(`/category/${e}`)
+            navigate(`store/category/${e}`)
         }, 500)
     }
 
@@ -143,9 +143,9 @@ export default function Nav() {
                                 <li>
                                     <NavLink
                                         className="mobileLogo"
-                                        to="/"
+                                        to="store/"
                                         exact="true"
-                                        disabled={activeLink === "/"}
+                                        disabled={activeLink === "store/"}
                                         onClick={closeSettings}
                                     >
                                         <svg viewBox="0 0 220 220">
@@ -197,7 +197,7 @@ export default function Nav() {
                                         <ImageLoader
                                             url={userData?.image}
                                             alt={userData?.name}
-                                            backupUrl="/assets/imgs/404/user404.png"
+                                            backupUrl="/store/assets/imgs/404/user404.png"
                                             backupAlt="User"
                                         ></ImageLoader>
                                     </button>
@@ -238,8 +238,8 @@ export default function Nav() {
                             )}
                             <li>
                                 <NavLink
-                                    to="/cart"
-                                    disabled={activeLink === "/cart"}
+                                    to="store/cart"
+                                    disabled={activeLink === "store/cart"}
                                     onClick={closeSettings}
                                     className='cartLink'
                                 >
@@ -316,7 +316,7 @@ export default function Nav() {
                                 <ImageLoader
                                     url={userData?.image}
                                     alt={userData?.name}
-                                    backupUrl="/assets/imgs/404/user404.png"
+                                    backupUrl="/store/assets/imgs/404/user404.png"
                                     backupAlt="User"
                                 ></ImageLoader>
                             </button>
@@ -358,8 +358,8 @@ export default function Nav() {
                                 </li>
                                 <li>
                                     <NavLink
-                                        to="/user"
-                                        disabled={activeLink === "/user"}
+                                        to="store/user"
+                                        disabled={activeLink === "store/user"}
                                         tabIndex={0}
                                         onClick={closeSettings}
                                     >
@@ -380,8 +380,8 @@ export default function Nav() {
                                 {!isMobile && <li className="divider"></li>}
                                 <li>
                                     <NavLink
-                                        to="/settings"
-                                        disabled={activeLink === "/settings"}
+                                        to="store/settings"
+                                        disabled={activeLink === "store/settings"}
                                         onClick={closeSettings}
                                     >
                                         <svg viewBox="0 0 32 32">

@@ -8,7 +8,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techxiaomi",
                     "name": "Xiaomi",
-                    "image": "/assets/imgs/manufacturers/xiaomi.jpg"
+                    "image": "/store/assets/imgs/manufacturers/xiaomi.jpg"
                 },
                 "productSizes": [
                     {
@@ -47,7 +47,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 399,
                 "discountPercentage": 8,
                 "discountedPrice": 367,
-                "image": "/assets/imgs/products/Phone-Apple-i-Phone-SE-2020.jpg",
+                "image": "/store/assets/imgs/products/Phone-Apple-i-Phone-SE-2020.jpg",
                 "rating": 2
             },
             {
@@ -57,7 +57,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techapple",
                     "name": "Apple",
-                    "image": "/assets/imgs/manufacturers/apple.jpg"
+                    "image": "/store/assets/imgs/manufacturers/apple.jpg"
                 },
                 "productSizes": [
                     {
@@ -94,7 +94,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 999,
                 "discountPercentage": 0,
                 "discountedPrice": 999,
-                "image": "/assets/imgs/products/Phone-One-Plus-9-pro-5-G.jpg",
+                "image": "/store/assets/imgs/products/Phone-One-Plus-9-pro-5-G.jpg",
                 "rating": 2.5
             },
             {
@@ -104,7 +104,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -147,7 +147,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 1099,
                 "discountPercentage": 0,
                 "discountedPrice": 1099,
-                "image": "/assets/imgs/products/Phone-Google-6-pro.jpg",
+                "image": "/store/assets/imgs/products/Phone-Google-6-pro.jpg",
                 "rating": 4
             },
             {
@@ -157,7 +157,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsony",
                     "name": "Sony",
-                    "image": "/assets/imgs/manufacturers/sony.jpg"
+                    "image": "/store/assets/imgs/manufacturers/sony.jpg"
                 },
                 "productSizes": [
                     {
@@ -202,7 +202,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 1299,
                 "discountPercentage": 0,
                 "discountedPrice": 1299,
-                "image": "/assets/imgs/products/Phone-Sony-Xperia-1-iii.jpg",
+                "image": "/store/assets/imgs/products/Phone-Sony-Xperia-1-iii.jpg",
                 "rating": 5
             },
             {
@@ -212,7 +212,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsamsung",
                     "name": "Samsung",
-                    "image": "/assets/imgs/manufacturers/samsung.jpg"
+                    "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                 },
                 "productSizes": [
                     {
@@ -255,7 +255,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 1199,
                 "discountPercentage": 0,
                 "discountedPrice": 1199,
-                "image": "/assets/imgs/products/Phone-Samsung-Galaxy-S21-Ultra-5.jpg",
+                "image": "/store/assets/imgs/products/Phone-Samsung-Galaxy-S21-Ultra-5.jpg",
                 "rating": 2.5
             },
             {
@@ -265,7 +265,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsony",
                     "name": "Sony",
-                    "image": "/assets/imgs/manufacturers/sony.jpg"
+                    "image": "/store/assets/imgs/manufacturers/sony.jpg"
                 },
                 "productSizes": [
                     {
@@ -292,7 +292,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 1799,
                 "discountPercentage": 4,
                 "discountedPrice": 1727,
-                "image": "/assets/imgs/products/Phone-Samsung-Galaxy-Z-Fold-3-5-G.jpg",
+                "image": "/store/assets/imgs/products/Phone-Samsung-Galaxy-Z-Fold-3-5-G.jpg",
                 "rating": 1
             },
             {
@@ -302,7 +302,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsamsung",
                     "name": "Samsung",
-                    "image": "/assets/imgs/manufacturers/samsung.jpg"
+                    "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                 },
                 "productSizes": [
                     {
@@ -351,7 +351,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 1299,
                 "discountPercentage": 0,
                 "discountedPrice": 1299,
-                "image": "/assets/imgs/products/Phone-Apple-i-Phone-13-pro-max.jpg",
+                "image": "/store/assets/imgs/products/Phone-Apple-i-Phone-13-pro-max.jpg",
                 "rating": 4.5
             },
             {
@@ -361,7 +361,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techlg",
                     "name": "LG",
-                    "image": "/assets/imgs/manufacturers/lg.jpg"
+                    "image": "/store/assets/imgs/manufacturers/lg.jpg"
                 },
                 "productSizes": [
                     {
@@ -394,7 +394,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 699,
                 "discountPercentage": 0,
                 "discountedPrice": 699,
-                "image": "/assets/imgs/products/Phone-Apple-i-Phone-12-mini.jpg",
+                "image": "/store/assets/imgs/products/Phone-Apple-i-Phone-12-mini.jpg",
                 "rating": 2
             },
             {
@@ -404,7 +404,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsamsung",
                     "name": "Samsung",
-                    "image": "/assets/imgs/manufacturers/samsung.jpg"
+                    "image": "/store/assets/imgs/manufacturers/samsung.jpg"
                 },
                 "productSizes": [
                     {
@@ -437,7 +437,7 @@ export async function getSubCategoryByID(ID) {
                 "price": 449,
                 "discountPercentage": 0,
                 "discountedPrice": 449,
-                "image": "/assets/imgs/products/Phone-Google-Pixel-5a-5-G.jpg",
+                "image": "/store/assets/imgs/products/Phone-Google-Pixel-5a-5-G.jpg",
                 "rating": 4
             },
             {
@@ -447,7 +447,7 @@ export async function getSubCategoryByID(ID) {
                 "manufacturer": {
                     "id": "techsony",
                     "name": "Sony",
-                    "image": "/assets/imgs/manufacturers/sony.jpg"
+                    "image": "/store/assets/imgs/manufacturers/sony.jpg"
                 },
                 "productSizes": [
                     {
@@ -480,13 +480,13 @@ export async function getSubCategoryByID(ID) {
                 "price": 799,
                 "discountPercentage": 7,
                 "discountedPrice": 743,
-                "image": "/assets/imgs/products/Phone-Xioami-Mi-11.jpg",
+                "image": "/store/assets/imgs/products/Phone-Xioami-Mi-11.jpg",
                 "rating": 4
             }
         ],
         "id": "cfc36e75-7f0b-4c4d-a4d9-a2d25f81b467",
         "name": "Smartphones",
-        "image": "/assets/imgs/subCategories/phone.jpg",
+        "image": "/store/assets/imgs/subCategories/phone.jpg",
         "description": "Discover the latest smartphones from top brands like Apple, Samsung, and more.",
         "category": {
             "id": "technology",

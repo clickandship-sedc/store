@@ -13,7 +13,7 @@ function Privacy() {
         </div>
 
         <div className="first-paragraph">
-          <p>At <Link to="http://localhost:3000/" className="link-style">Click & Ship </Link> 
+          <p>At <Link to="https://clickandship-sedc.github.io/store/" className="link-style">Click & Ship </Link> 
             (hereinafter, "we," "us," "our"), we prioritize the protection and
             security of your personal information. We understand the
             significance of maintaining the confidentiality of the data you

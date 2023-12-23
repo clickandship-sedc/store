@@ -208,14 +208,14 @@ function AdminCategories() {
                                     <ImageLoader
                                         url={cCatData.image}
                                         alt={cCatData.name}
-                                        backupUrl="/assets/imgs/404/category404.png"
+                                        backupUrl="/store/assets/imgs/404/category404.png"
                                         backupAlt={cCatData.name || "Category"}
                                     ></ImageLoader>
                                     <div>
                                         <ImageLoader
                                             url={cCatData.icon}
                                             alt={cCatData.name}
-                                            backupUrl="/assets/imgs/404/category404.png"
+                                            backupUrl="/store/assets/imgs/404/category404.png"
                                             backupAlt={cCatData.name || "Category"}
                                         ></ImageLoader>
                                         <section>
@@ -244,7 +244,7 @@ function AdminCategories() {
                                                     <ImageLoader
                                                         url={e.image}
                                                         alt={e.name}
-                                                        backupUrl="/assets/imgs/404/category404.png"
+                                                        backupUrl="/store/assets/imgs/404/category404.png"
                                                         backupAlt={e.name || "Manufacturer"}
                                                     ></ImageLoader>
                                                     <p>{e.name}</p>
@@ -258,11 +258,11 @@ function AdminCategories() {
                                         </li>
                                         {cCatData.subcategories.map((e) => (
                                             <li key={e.id}>
-                                                <NavLink to={`/sub/${e.id}`}>
+                                                <NavLink to={`store/sub/${e.id}`}>
                                                     <ImageLoader
                                                         url={e.image}
                                                         alt={e.name}
-                                                        backupUrl="/assets/imgs/404/category404.png"
+                                                        backupUrl="/store/assets/imgs/404/category404.png"
                                                         backupAlt={e.name || "Manufacturer"}
                                                     ></ImageLoader>
                                                     <p>{e.name}</p>
@@ -715,7 +715,7 @@ const CreateCategory = ({ categories }) => {
                                     <ImageLoader
                                         url={URL.createObjectURL(dataURLtoFile('data:image/png;base64,' + e.image?.base64, e.image?.name))}
                                         alt={e.name}
-                                        backupUrl="/assets/imgs/404/category404.png"
+                                        backupUrl="/store/assets/imgs/404/category404.png"
                                         backupAlt={e.name || "SubCategory"}
                                     ></ImageLoader>
                                     <p>{e.name}</p>
@@ -812,7 +812,7 @@ const CreateCategory = ({ categories }) => {
                                     <ImageLoader
                                         url={e.image}
                                         alt={e.name}
-                                        backupUrl="/assets/imgs/404/category404.png"
+                                        backupUrl="/store/assets/imgs/404/category404.png"
                                         backupAlt={e.name || "Manufacturer"}
                                     ></ImageLoader>
                                     <p>{e.name}</p>

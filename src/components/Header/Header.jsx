@@ -14,7 +14,7 @@ export default function Header() {
 
     const location = useLocation()
 
-    const isSmallHeader = ["/"].includes(location.pathname)
+    const isSmallHeader = ["store/"].includes(location.pathname)
 
     const closeSettings = () => {
         if (isSettingsOn) {
@@ -24,7 +24,7 @@ export default function Header() {
     
     return (
         <header className={!isSmallHeader ? "smallHeader" : ""}>
-            <Link className="logo" to="/" onClick={closeSettings}>
+            <Link className="logo" to="store/" onClick={closeSettings}>
                 <svg viewBox="0 0 717 241">
                     <path
                         d="M242.468 78C248.599 78.1248 254.654 79.4703 260.314 81.9662L256.967 95.5162C252.733 93.9522 247.979 92.0505 242.574 92.0505C228.489 92.0505 222.67 102.573 222.67 118.925C222.67 135.278 228.702 144.912 242.468 144.912C247.921 144.859 253.274 143.353 258.032 140.533L261 154.295C255.039 157.41 248.477 159.02 241.829 159C219.288 159 207 143.098 207 119.025C207 94.7279 219.075 78 242.468 78Z"

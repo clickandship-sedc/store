@@ -24,7 +24,7 @@ function SubCategory() {
             {
                 isSubPending ? (
                     <BigLoadingDiv
-                        link={"/"}
+                    link={"store/"}
                         title={"loading sub-category..."}
                         message={"you can click here to retry if its taking too long"}
                         refetch={subRefetch}
@@ -33,7 +33,7 @@ function SubCategory() {
                     <CategoriesDetails origin={'subcategory'} dataObject={subData}></CategoriesDetails>
                 ) : isSubError ? (
                     <NotFound
-                        link={"/"}
+                    link={"store/"}
                         title={"dont have that one"}
                         message={subError.message}
                     ></NotFound>
