@@ -63,7 +63,7 @@ function User() {
             <ImageLoader
               url={data.image}
               alt={data.name}
-              backupUrl="/imgs/404/user404.png"
+              backupUrl="/assets/imgs/404/user404.png"
               backupAlt="User 404"
             ></ImageLoader>
           </div>
@@ -303,7 +303,7 @@ export function ACUser() {
             <ImageLoader
               url={data.image}
               alt={data.name}
-              backupUrl="/imgs/404/user404.png"
+              backupUrl="/assets/imgs/404/user404.png"
               backupAlt="User 404"
             ></ImageLoader>
           </div>

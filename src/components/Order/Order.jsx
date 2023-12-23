@@ -76,7 +76,7 @@ function Order({ order, userId }) {
                         <ImageLoader
                             url={orderItem.image}
                             alt={orderItem.name}
-                            backupUrl="/imgs/404/product404.png"
+                            backupUrl="/assets/imgs/404/product404.png"
                             backupAlt="Product Image 404"
                         ></ImageLoader>
                         <div>
@@ -164,7 +164,7 @@ export function UserOrder({ order }) {
                             <ImageLoader
                                 url={orderItem.image}
                                 alt={orderItem.name}
-                                backupUrl="/imgs/404/product404.png"
+                                backupUrl="/assets/imgs/404/product404.png"
                                 backupAlt="Product Image 404"
                             ></ImageLoader>
                             <div>

@@ -197,7 +197,7 @@ export default function Nav() {
                                         <ImageLoader
                                             url={userData?.image}
                                             alt={userData?.name}
-                                            backupUrl="/imgs/404/user404.png"
+                                            backupUrl="/assets/imgs/404/user404.png"
                                             backupAlt="User"
                                         ></ImageLoader>
                                     </button>
@@ -316,7 +316,7 @@ export default function Nav() {
                                 <ImageLoader
                                     url={userData?.image}
                                     alt={userData?.name}
-                                    backupUrl="/imgs/404/user404.png"
+                                    backupUrl="/assets/imgs/404/user404.png"
                                     backupAlt="User"
                                 ></ImageLoader>
                             </button>

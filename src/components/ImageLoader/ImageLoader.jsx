@@ -34,7 +34,7 @@ function ImageLoader(props) {
                 />
             ) : (
                 <img
-                    src={props?.thirdBackupUrl || '/imgs/404/category404.png'}
+                    src={props?.thirdBackupUrl || ''}
                     alt={props?.backupAlt || 'Not Found'}
                 />
             )}

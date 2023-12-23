@@ -208,14 +208,14 @@ function AdminCategories() {
                                     <ImageLoader
                                         url={cCatData.image}
                                         alt={cCatData.name}
-                                        backupUrl="/imgs/404/category404.png"
+                                        backupUrl="/assets/imgs/404/category404.png"
                                         backupAlt={cCatData.name || "Category"}
                                     ></ImageLoader>
                                     <div>
                                         <ImageLoader
                                             url={cCatData.icon}
                                             alt={cCatData.name}
-                                            backupUrl="/imgs/404/category404.png"
+                                            backupUrl="/assets/imgs/404/category404.png"
                                             backupAlt={cCatData.name || "Category"}
                                         ></ImageLoader>
                                         <section>
@@ -244,7 +244,7 @@ function AdminCategories() {
                                                     <ImageLoader
                                                         url={e.image}
                                                         alt={e.name}
-                                                        backupUrl="/imgs/404/category404.png"
+                                                        backupUrl="/assets/imgs/404/category404.png"
                                                         backupAlt={e.name || "Manufacturer"}
                                                     ></ImageLoader>
                                                     <p>{e.name}</p>
@@ -262,7 +262,7 @@ function AdminCategories() {
                                                     <ImageLoader
                                                         url={e.image}
                                                         alt={e.name}
-                                                        backupUrl="/imgs/404/category404.png"
+                                                        backupUrl="/assets/imgs/404/category404.png"
                                                         backupAlt={e.name || "Manufacturer"}
                                                     ></ImageLoader>
                                                     <p>{e.name}</p>
@@ -715,7 +715,7 @@ const CreateCategory = ({ categories }) => {
                                     <ImageLoader
                                         url={URL.createObjectURL(dataURLtoFile('data:image/png;base64,' + e.image?.base64, e.image?.name))}
                                         alt={e.name}
-                                        backupUrl="/imgs/404/category404.png"
+                                        backupUrl="/assets/imgs/404/category404.png"
                                         backupAlt={e.name || "SubCategory"}
                                     ></ImageLoader>
                                     <p>{e.name}</p>
@@ -812,7 +812,7 @@ const CreateCategory = ({ categories }) => {
                                     <ImageLoader
                                         url={e.image}
                                         alt={e.name}
-                                        backupUrl="/imgs/404/category404.png"
+                                        backupUrl="/assets/imgs/404/category404.png"
                                         backupAlt={e.name || "Manufacturer"}
                                     ></ImageLoader>
                                     <p>{e.name}</p>

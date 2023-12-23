@@ -75,7 +75,7 @@ function CategoriesList() {
                                             <ImageLoader
                                                 alt={e.name}
                                                 url={e.image}
-                                                backupUrl="/imgs/404/category404.png"
+                                                backupUrl="/assets/imgs/404/category404.png"
                                                 backupAlt={e.name || 'Manufacturer'}
                                             ></ImageLoader>
                                         </NavLink>

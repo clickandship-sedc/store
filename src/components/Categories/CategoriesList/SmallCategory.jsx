@@ -9,7 +9,7 @@ export function SmallCategory(props) {
                 <ImageLoader
                     url={props.subcategory.image}
                     alt={props.subcategory.name}
-                    backupUrl="/imgs/404/category404.png"
+                    backupUrl="/assets/imgs/404/category404.png"
                     backupAlt={props.subcategory.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -28,7 +28,7 @@ export function BiggerCategory(props) {
                 <ImageLoader
                     url={props.category.image}
                     alt={props.category.name}
-                    backupUrl="/imgs/404/category404.png"
+                    backupUrl="/assets/imgs/404/category404.png"
                     backupAlt={props.category.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -47,7 +47,7 @@ export function AdminSmallCategory(props) {
                 <ImageLoader
                     url={props.subcategory.image}
                     alt={props.subcategory.name}
-                    backupUrl="/imgs/404/category404.png"
+                    backupUrl="/assets/imgs/404/category404.png"
                     backupAlt={props.subcategory.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>
@@ -66,7 +66,7 @@ export function AdminBiggerCategory(props) {
                 <ImageLoader
                     url={props.category.image}
                     alt={props.category.name}
-                    backupUrl="/imgs/404/category404.png"
+                    backupUrl="/assets/imgs/404/category404.png"
                     backupAlt={props.category.name || 'Sub-Category'}
                 ></ImageLoader>
                 <div>

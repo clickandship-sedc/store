@@ -11,15 +11,15 @@ export default function ProductCard({ product, subCatImage }) {
         <ImageLoader
           url={product.image}
           alt={product.name}
-          backupUrl={subCatImage || '/imgs/404/product404.png'}
+          backupUrl={subCatImage || '/assets/imgs/404/product404.png'}
           backupAlt="Product Image 404"
-          thirdBackupUrl={'/imgs/404/product404.png'}
+          thirdBackupUrl={'/assets/imgs/404/product404.png'}
         ></ImageLoader>
         <div className='infoDiv'>
           <p className='title'>{product.name}</p>
           <div className='ratingDiv'>
             <Stars initialRating={product.rating} id={product.id} shouldHover={false}></Stars>
-            <p>({product.ratings?.length || 0})</p>
+            {/* <p>({product.ratings?.length || 0})</p> */}
           </div>
           <div className='priceDiv'>
             {product.discountPercentage > 1 ?

@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react"
 import { leftArrow, rightArrow } from "./arrows"
 
 const images = [
-  { url: "/imgs/catScrollPictures/parent1.jpg.jpg", alt: "Car One" },
-  { url: "/imgs/catScrollPictures/parent2.jpg.jpg", alt: "Car Two" },
-  { url: "/imgs/catScrollPictures/parent3.jpg", alt: "Car Three" },
-  { url: "/imgs/catScrollPictures/parent_4.jpg", alt: "Car Four" },
+  { url: "/assets/imgs/catScrollPictures/parent1.jpg.jpg", alt: "Car One" },
+  { url: "/assets/imgs/catScrollPictures/parent2.jpg.jpg", alt: "Car Two" },
+  { url: "/assets/imgs/catScrollPictures/parent3.jpg", alt: "Car Three" },
+  { url: "/assets/imgs/catScrollPictures/parent_4.jpg", alt: "Car Four" },
 ]
 
 function ImageSlider() {

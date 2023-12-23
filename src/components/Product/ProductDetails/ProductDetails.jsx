@@ -208,7 +208,7 @@ function ProductDetails() {
               <ImageLoader
                 url={productData.image}
                 alt={productData.name}
-                backupUrl="/imgs/404/product404.png"
+                backupUrl="/assets/imgs/404/product404.png"
                 backupAlt="Product Image 404"
               ></ImageLoader>
             </div>
@@ -222,7 +222,7 @@ function ProductDetails() {
                     <ImageLoader
                       url={productData.manufacturer.image}
                       alt={productData.manufacturer.name}
-                      backupUrl="/imgs/404/category404.png"
+                      backupUrl="/"
                       backupAlt="Manufacturer"
                     ></ImageLoader>
                   </NavLink>

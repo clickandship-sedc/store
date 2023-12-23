@@ -9,13 +9,12 @@ function SearchItem({ item, handleClick }) {
         <li>
             <button onClick={() => handleClick(item.id)}>
                 <div className="resultTitle">
-                    {/* <img src={item.image} alt="product" /> */}
                     <ImageLoader
                         url={item.image}
                         alt={item.name}
-                        backupUrl={'/imgs/404/category404.png'}
+                        backupUrl={'/assets/imgs/404/category404.png'}
                         backupAlt="Product"
-                        thirdBackupUrl={'/imgs/404/product404.png'}
+                        thirdBackupUrl={'/assets/imgs/404/product404.png'}
                     ></ImageLoader>
                     <h3>{item.name}</h3>
                 </div>

@@ -16,6 +16,7 @@
 
     ul {
         display: flex;
+        width: 100%;
 
         @media(min-width:800px) {
             gap: 1rem;
@@ -38,6 +39,16 @@
                     padding: .5rem;
                     gap: .5rem;
 
+                    img {
+                        all: unset;
+                        width: 100%;
+                        border-radius: .3rem;
+                        background-color: var(--tpPri2);
+                        transition: scale .6s cubic-bezier(.19, 1, .22, 1);
+                        aspect-ratio: 12/16;
+                        object-fit: cover;
+                    }
+
                     .infoDiv {
                         gap: .3rem;
                         color: var(--secColor);
@@ -49,6 +60,7 @@
                             overflow: hidden;
                             white-space: nowrap;
                             transition: color .6s cubic-bezier(.19, 1, .22, 1);
+                            align-self: center;
                         }
 
                         div {
