@@ -59,13 +59,13 @@ function App() {
               <AdminNav></AdminNav>
               <Routes>
                 <Route path="store/" element={<AdminCategories />} />
-                <Route path="store/sub" element={<AdminSub />} />
-                <Route path="store/sub/:id" element={<AdminSub />} />
-                <Route path="store/products" element={<AdminProducts />} />
-                <Route path="store/orders" element={<AdminOrders />} />
-                <Route path="store/users" element={<AdminUsers />} />
-                <Route path="store/user" element={<ACUser />} />
-                <Route path="store/settings" element={<UserSettings />} />
+                <Route path="/sub" element={<AdminSub />} />
+                <Route path="/sub/:id" element={<AdminSub />} />
+                <Route path="/products" element={<AdminProducts />} />
+                <Route path="/orders" element={<AdminOrders />} />
+                <Route path="/users" element={<AdminUsers />} />
+                <Route path="/user" element={<ACUser />} />
+                <Route path="/settings" element={<UserSettings />} />
                 <Route
                   path="*"
                   element={
@@ -89,8 +89,8 @@ function App() {
             <DashboardHeader></DashboardHeader>
             <Routes>
               <Route path="store/" element={<CourierDashboard />} />
-              <Route path="store/user" element={<ACUser />} />
-              <Route path="store/settings" element={<UserSettings />} />
+              <Route path="/user" element={<ACUser />} />
+              <Route path="/settings" element={<UserSettings />} />
               <Route
                 path="*"
                 element={
@@ -116,17 +116,17 @@ function App() {
             <DDBkgf></DDBkgf>
             <Routes>
               <Route path="store/" element={<Home />} />
-              <Route path="store/category/:catId" element={<CategoriesList />} />
-              <Route path="store/subcategory/:subId" element={<SubCategory />} />
-              <Route path="store/manufacturer/:manufacturerId" element={<Manufacturer />} />
-              <Route path="store/search/:searchid" element={<Search />} />
-              <Route path="store/productDetails/:productId" element={<ProductDetails />} />
-              <Route path="store/user" element={<User />} />
-              <Route path="store/settings" element={<UserSettings />} />
-              <Route path="store/cart" element={<Cart />} />
-              <Route path="store/privacy" element={<Privacy />} />
-              <Route path="store/disclaimer" element={<Disclaimer />} />
-              <Route path="store/location" element={<Location />} />
+              <Route path="/category/:catId" element={<CategoriesList />} />
+              <Route path="/subcategory/:subId" element={<SubCategory />} />
+              <Route path="/manufacturer/:manufacturerId" element={<Manufacturer />} />
+              <Route path="/search/:searchid" element={<Search />} />
+              <Route path="/productDetails/:productId" element={<ProductDetails />} />
+              <Route path="/user" element={<User />} />
+              <Route path="/settings" element={<UserSettings />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/disclaimer" element={<Disclaimer />} />
+              <Route path="/location" element={<Location />} />
               <Route
                 path="*"
                 element={
